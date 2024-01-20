@@ -1,0 +1,3435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_260faf36e619bbef0d39bd834ea7251f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_260faf36e619bbef0d39bd834ea7251f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_260faf36e619bbef0d39bd834ea7251f = L.map(
+                "map_260faf36e619bbef0d39bd834ea7251f",
+                {
+                    center: [34.01187554166666, -118.24713253124999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d9c31d69f4a8602cab84d8b7e776ec37 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_d9c31d69f4a8602cab84d8b7e776ec37.addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var marker_969b618b2860d9065380f58ddf7cd926 = L.marker(
+                [33.768071, -118.192921],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_3626f52ecacb7176a3146c16f6bd7ac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_969b618b2860d9065380f58ddf7cd926.setIcon(icon_3626f52ecacb7176a3146c16f6bd7ac1);
+        
+    
+        var popup_ff2f5abe15fbeaa1098236896ecb7bb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_384a6401e369a0dbae6387b4a5f291d3 = $(`<div id="html_384a6401e369a0dbae6387b4a5f291d3" style="width: 100.0%; height: 100.0%;">Downtown Long Beach Station</div>`)[0];
+                popup_ff2f5abe15fbeaa1098236896ecb7bb3.setContent(html_384a6401e369a0dbae6387b4a5f291d3);
+            
+        
+
+        marker_969b618b2860d9065380f58ddf7cd926.bindPopup(popup_ff2f5abe15fbeaa1098236896ecb7bb3)
+        ;
+
+        
+    
+    
+            marker_969b618b2860d9065380f58ddf7cd926.bindTooltip(
+                `<div>
+                     Blue Line: Downtown Long Beach Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a069df6a231ed3cb8e9b5686c201b2eb = L.marker(
+                [33.772258, -118.1937],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_e396bf499bcc8ab42ce34966483244b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a069df6a231ed3cb8e9b5686c201b2eb.setIcon(icon_e396bf499bcc8ab42ce34966483244b7);
+        
+    
+        var popup_440941fd698394c7e754741bac182afb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be0fc23f64e8d7a6ea2ad17f206bd5fc = $(`<div id="html_be0fc23f64e8d7a6ea2ad17f206bd5fc" style="width: 100.0%; height: 100.0%;">Pacific Ave Station</div>`)[0];
+                popup_440941fd698394c7e754741bac182afb.setContent(html_be0fc23f64e8d7a6ea2ad17f206bd5fc);
+            
+        
+
+        marker_a069df6a231ed3cb8e9b5686c201b2eb.bindPopup(popup_440941fd698394c7e754741bac182afb)
+        ;
+
+        
+    
+    
+            marker_a069df6a231ed3cb8e9b5686c201b2eb.bindTooltip(
+                `<div>
+                     Blue Line: Pacific Ave Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20096ffe9e0f860baa22a5f7bf5e532c = L.marker(
+                [33.78183, -118.189384],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_0e4fdab825852b0122f3356a5f323a82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_20096ffe9e0f860baa22a5f7bf5e532c.setIcon(icon_0e4fdab825852b0122f3356a5f323a82);
+        
+    
+        var popup_582ccb77333620e37780fc12f4aa7dde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4df16e19253855d3c42d350a32c7166 = $(`<div id="html_f4df16e19253855d3c42d350a32c7166" style="width: 100.0%; height: 100.0%;">Anaheim Street Station</div>`)[0];
+                popup_582ccb77333620e37780fc12f4aa7dde.setContent(html_f4df16e19253855d3c42d350a32c7166);
+            
+        
+
+        marker_20096ffe9e0f860baa22a5f7bf5e532c.bindPopup(popup_582ccb77333620e37780fc12f4aa7dde)
+        ;
+
+        
+    
+    
+            marker_20096ffe9e0f860baa22a5f7bf5e532c.bindTooltip(
+                `<div>
+                     Blue Line: Anaheim Street Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45f109e041bc6075a867275872a09281 = L.marker(
+                [33.78909, -118.189382],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_d8649949a556ebe2dca9c0b609c2c646 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45f109e041bc6075a867275872a09281.setIcon(icon_d8649949a556ebe2dca9c0b609c2c646);
+        
+    
+        var popup_018bf72e6f6f9f529775986f81742389 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4b80a92847e3b306c1b8e0a285feded = $(`<div id="html_b4b80a92847e3b306c1b8e0a285feded" style="width: 100.0%; height: 100.0%;">Pacific Coast Hwy Station</div>`)[0];
+                popup_018bf72e6f6f9f529775986f81742389.setContent(html_b4b80a92847e3b306c1b8e0a285feded);
+            
+        
+
+        marker_45f109e041bc6075a867275872a09281.bindPopup(popup_018bf72e6f6f9f529775986f81742389)
+        ;
+
+        
+    
+    
+            marker_45f109e041bc6075a867275872a09281.bindTooltip(
+                `<div>
+                     Blue Line: Pacific Coast Hwy Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee19b0e8ba4210f2e083faf06029bb2e = L.marker(
+                [33.807079, -118.189834],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_5b98444fe4cb1ed456ad9683dda0ffc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee19b0e8ba4210f2e083faf06029bb2e.setIcon(icon_5b98444fe4cb1ed456ad9683dda0ffc4);
+        
+    
+        var popup_ca813c836a0b8a984a635ebe26dd172c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a497e59d236de27e4f3d38144c5bfa16 = $(`<div id="html_a497e59d236de27e4f3d38144c5bfa16" style="width: 100.0%; height: 100.0%;">Willow Street Station</div>`)[0];
+                popup_ca813c836a0b8a984a635ebe26dd172c.setContent(html_a497e59d236de27e4f3d38144c5bfa16);
+            
+        
+
+        marker_ee19b0e8ba4210f2e083faf06029bb2e.bindPopup(popup_ca813c836a0b8a984a635ebe26dd172c)
+        ;
+
+        
+    
+    
+            marker_ee19b0e8ba4210f2e083faf06029bb2e.bindTooltip(
+                `<div>
+                     Blue Line: Willow Street Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b70caa9ac640782aa22d7eabbf2b5e49 = L.marker(
+                [33.819865, -118.19609],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_b79a88ae607d55cc9f83595b6d93d24d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b70caa9ac640782aa22d7eabbf2b5e49.setIcon(icon_b79a88ae607d55cc9f83595b6d93d24d);
+        
+    
+        var popup_d798c063fcd10e5312c443588e8b4910 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12ed5d66481777b17c8fc9d9d32fd7bc = $(`<div id="html_12ed5d66481777b17c8fc9d9d32fd7bc" style="width: 100.0%; height: 100.0%;">Wardlow Station</div>`)[0];
+                popup_d798c063fcd10e5312c443588e8b4910.setContent(html_12ed5d66481777b17c8fc9d9d32fd7bc);
+            
+        
+
+        marker_b70caa9ac640782aa22d7eabbf2b5e49.bindPopup(popup_d798c063fcd10e5312c443588e8b4910)
+        ;
+
+        
+    
+    
+            marker_b70caa9ac640782aa22d7eabbf2b5e49.bindTooltip(
+                `<div>
+                     Blue Line: Wardlow Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3143d0cd2799955cb2a6727a9a1596e4 = L.marker(
+                [33.848222, -118.211017],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_f8c4583e5ad748523aeff967f31949bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3143d0cd2799955cb2a6727a9a1596e4.setIcon(icon_f8c4583e5ad748523aeff967f31949bb);
+        
+    
+        var popup_d06b865992a3e5636951321f171b22fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e25be849b8e645d26525d0766e5da60 = $(`<div id="html_7e25be849b8e645d26525d0766e5da60" style="width: 100.0%; height: 100.0%;">Del Amo Station</div>`)[0];
+                popup_d06b865992a3e5636951321f171b22fe.setContent(html_7e25be849b8e645d26525d0766e5da60);
+            
+        
+
+        marker_3143d0cd2799955cb2a6727a9a1596e4.bindPopup(popup_d06b865992a3e5636951321f171b22fe)
+        ;
+
+        
+    
+    
+            marker_3143d0cd2799955cb2a6727a9a1596e4.bindTooltip(
+                `<div>
+                     Blue Line: Del Amo Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_416f3d0fa7508f834aaf94a7ee300c58 = L.marker(
+                [33.876082, -118.222503],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_ce090e605f123d1a1f44e54a36e5f260 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_416f3d0fa7508f834aaf94a7ee300c58.setIcon(icon_ce090e605f123d1a1f44e54a36e5f260);
+        
+    
+        var popup_6830c9e2947ae1a49c0379e5af842a42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e50cbbca71ce8432d1b4975f977ec725 = $(`<div id="html_e50cbbca71ce8432d1b4975f977ec725" style="width: 100.0%; height: 100.0%;">Artesia Station</div>`)[0];
+                popup_6830c9e2947ae1a49c0379e5af842a42.setContent(html_e50cbbca71ce8432d1b4975f977ec725);
+            
+        
+
+        marker_416f3d0fa7508f834aaf94a7ee300c58.bindPopup(popup_6830c9e2947ae1a49c0379e5af842a42)
+        ;
+
+        
+    
+    
+            marker_416f3d0fa7508f834aaf94a7ee300c58.bindTooltip(
+                `<div>
+                     Blue Line: Artesia Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_526c65319cfccea6c0010aae6e08135d = L.marker(
+                [33.89749, -118.224249],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_46313500c228e3a3f9ac6eb94a559ecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_526c65319cfccea6c0010aae6e08135d.setIcon(icon_46313500c228e3a3f9ac6eb94a559ecb);
+        
+    
+        var popup_6c863ed074ada389be0d73f1f9805913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc307e83cccb073017cfa173a06ec10a = $(`<div id="html_fc307e83cccb073017cfa173a06ec10a" style="width: 100.0%; height: 100.0%;">Compton Station</div>`)[0];
+                popup_6c863ed074ada389be0d73f1f9805913.setContent(html_fc307e83cccb073017cfa173a06ec10a);
+            
+        
+
+        marker_526c65319cfccea6c0010aae6e08135d.bindPopup(popup_6c863ed074ada389be0d73f1f9805913)
+        ;
+
+        
+    
+    
+            marker_526c65319cfccea6c0010aae6e08135d.bindTooltip(
+                `<div>
+                     Blue Line: Compton Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f5facb40b7600a166301c2418647286 = L.marker(
+                [33.928048, -118.237555],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_624e30c078febecc785ffd37bec6b337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f5facb40b7600a166301c2418647286.setIcon(icon_624e30c078febecc785ffd37bec6b337);
+        
+    
+        var popup_b05c5bb31aa128ef43f605652509d842 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ec8553640080d637f2422a5b4c91cc8 = $(`<div id="html_2ec8553640080d637f2422a5b4c91cc8" style="width: 100.0%; height: 100.0%;">Willowbrook - Rosa Parks Station - Metro Blue Line</div>`)[0];
+                popup_b05c5bb31aa128ef43f605652509d842.setContent(html_2ec8553640080d637f2422a5b4c91cc8);
+            
+        
+
+        marker_0f5facb40b7600a166301c2418647286.bindPopup(popup_b05c5bb31aa128ef43f605652509d842)
+        ;
+
+        
+    
+    
+            marker_0f5facb40b7600a166301c2418647286.bindTooltip(
+                `<div>
+                     Blue Line: Willowbrook - Rosa Parks Station - Metro Blue Line
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87780814f5d76ca5d8ad732b1fdb616c = L.marker(
+                [33.94222, -118.243159],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_a0f8ad44fa7b53dcdd26d40ec14a7a6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87780814f5d76ca5d8ad732b1fdb616c.setIcon(icon_a0f8ad44fa7b53dcdd26d40ec14a7a6f);
+        
+    
+        var popup_37c46c15b3f1d24f9b21ef43f17d5301 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c7121fc47115eb4df17519a953ce939 = $(`<div id="html_4c7121fc47115eb4df17519a953ce939" style="width: 100.0%; height: 100.0%;">103rd Street / Watts Towers  Station</div>`)[0];
+                popup_37c46c15b3f1d24f9b21ef43f17d5301.setContent(html_4c7121fc47115eb4df17519a953ce939);
+            
+        
+
+        marker_87780814f5d76ca5d8ad732b1fdb616c.bindPopup(popup_37c46c15b3f1d24f9b21ef43f17d5301)
+        ;
+
+        
+    
+    
+            marker_87780814f5d76ca5d8ad732b1fdb616c.bindTooltip(
+                `<div>
+                     Blue Line: 103rd Street / Watts Towers  Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55a92da52312fd76dbddc8d54e4e87f3 = L.marker(
+                [33.959611, -118.243205],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_57ee9af0b8bc7353bafaebc788a66efc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55a92da52312fd76dbddc8d54e4e87f3.setIcon(icon_57ee9af0b8bc7353bafaebc788a66efc);
+        
+    
+        var popup_15960c912bfa9de954cc9d0f6d0af1b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9986b8e6f23211679b66f2f4dbb651d3 = $(`<div id="html_9986b8e6f23211679b66f2f4dbb651d3" style="width: 100.0%; height: 100.0%;">Firestone Station</div>`)[0];
+                popup_15960c912bfa9de954cc9d0f6d0af1b0.setContent(html_9986b8e6f23211679b66f2f4dbb651d3);
+            
+        
+
+        marker_55a92da52312fd76dbddc8d54e4e87f3.bindPopup(popup_15960c912bfa9de954cc9d0f6d0af1b0)
+        ;
+
+        
+    
+    
+            marker_55a92da52312fd76dbddc8d54e4e87f3.bindTooltip(
+                `<div>
+                     Blue Line: Firestone Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62c4f818ff5e84e434ca5670c4db9bbb = L.marker(
+                [33.97374, -118.243271],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_23c99a2d47c011b65e810a0e30261c7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62c4f818ff5e84e434ca5670c4db9bbb.setIcon(icon_23c99a2d47c011b65e810a0e30261c7d);
+        
+    
+        var popup_a42165f1305bb685ea873b7505efd39d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b4bcc834b380aea85a49d668568de4e = $(`<div id="html_5b4bcc834b380aea85a49d668568de4e" style="width: 100.0%; height: 100.0%;">Florence Station</div>`)[0];
+                popup_a42165f1305bb685ea873b7505efd39d.setContent(html_5b4bcc834b380aea85a49d668568de4e);
+            
+        
+
+        marker_62c4f818ff5e84e434ca5670c4db9bbb.bindPopup(popup_a42165f1305bb685ea873b7505efd39d)
+        ;
+
+        
+    
+    
+            marker_62c4f818ff5e84e434ca5670c4db9bbb.bindTooltip(
+                `<div>
+                     Blue Line: Florence Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2040f03b152c54fee69843d1aca6c55b = L.marker(
+                [33.98876, -118.243398],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_c3ad4a8aa98c7db90a77f93ba3e87b57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2040f03b152c54fee69843d1aca6c55b.setIcon(icon_c3ad4a8aa98c7db90a77f93ba3e87b57);
+        
+    
+        var popup_517bde1177bf773697cc852235be9f16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77d1d8fda2c6b2003f01733942b502f0 = $(`<div id="html_77d1d8fda2c6b2003f01733942b502f0" style="width: 100.0%; height: 100.0%;">Slauson Station</div>`)[0];
+                popup_517bde1177bf773697cc852235be9f16.setContent(html_77d1d8fda2c6b2003f01733942b502f0);
+            
+        
+
+        marker_2040f03b152c54fee69843d1aca6c55b.bindPopup(popup_517bde1177bf773697cc852235be9f16)
+        ;
+
+        
+    
+    
+            marker_2040f03b152c54fee69843d1aca6c55b.bindTooltip(
+                `<div>
+                     Blue Line: Slauson Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b07d749d625fb531e876699b37f7135d = L.marker(
+                [34.00292, -118.243303],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_86327eccc67e29441dabebe6c83d3faa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b07d749d625fb531e876699b37f7135d.setIcon(icon_86327eccc67e29441dabebe6c83d3faa);
+        
+    
+        var popup_63c1a635f46e50cb0f990960ac2d43e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a896a9e9676f7435a078132635c5d561 = $(`<div id="html_a896a9e9676f7435a078132635c5d561" style="width: 100.0%; height: 100.0%;">Vernon Station</div>`)[0];
+                popup_63c1a635f46e50cb0f990960ac2d43e5.setContent(html_a896a9e9676f7435a078132635c5d561);
+            
+        
+
+        marker_b07d749d625fb531e876699b37f7135d.bindPopup(popup_63c1a635f46e50cb0f990960ac2d43e5)
+        ;
+
+        
+    
+    
+            marker_b07d749d625fb531e876699b37f7135d.bindTooltip(
+                `<div>
+                     Blue Line: Vernon Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6816332db5c7de20b558b415dd1dca70 = L.marker(
+                [34.01965, -118.243084],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_a7a2c24c2604226c160e89fbe677e763 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6816332db5c7de20b558b415dd1dca70.setIcon(icon_a7a2c24c2604226c160e89fbe677e763);
+        
+    
+        var popup_0533b23013d27fb95ebb3b93681240e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58fcb5b73e58883e6d2f18fb9fedf05b = $(`<div id="html_58fcb5b73e58883e6d2f18fb9fedf05b" style="width: 100.0%; height: 100.0%;">Washington Station</div>`)[0];
+                popup_0533b23013d27fb95ebb3b93681240e9.setContent(html_58fcb5b73e58883e6d2f18fb9fedf05b);
+            
+        
+
+        marker_6816332db5c7de20b558b415dd1dca70.bindPopup(popup_0533b23013d27fb95ebb3b93681240e9)
+        ;
+
+        
+    
+    
+            marker_6816332db5c7de20b558b415dd1dca70.bindTooltip(
+                `<div>
+                     Blue Line: Washington Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7c1a2510524826da082d98c8e61bdf9 = L.marker(
+                [34.026807, -118.255505],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_079305e56f160e6fb503a30eb31fa0b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a7c1a2510524826da082d98c8e61bdf9.setIcon(icon_079305e56f160e6fb503a30eb31fa0b4);
+        
+    
+        var popup_fddeb3fc020664488d9ef31aa2e0791d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da36a91ff28006f211f771039d44a6f6 = $(`<div id="html_da36a91ff28006f211f771039d44a6f6" style="width: 100.0%; height: 100.0%;">San Pedro Street Station</div>`)[0];
+                popup_fddeb3fc020664488d9ef31aa2e0791d.setContent(html_da36a91ff28006f211f771039d44a6f6);
+            
+        
+
+        marker_a7c1a2510524826da082d98c8e61bdf9.bindPopup(popup_fddeb3fc020664488d9ef31aa2e0791d)
+        ;
+
+        
+    
+    
+            marker_a7c1a2510524826da082d98c8e61bdf9.bindTooltip(
+                `<div>
+                     Blue Line: San Pedro Street Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e8d449036ebb567c7d3855637d20233 = L.marker(
+                [34.033155, -118.269333],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_97810922f3d443e54c49c987f47cdd16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e8d449036ebb567c7d3855637d20233.setIcon(icon_97810922f3d443e54c49c987f47cdd16);
+        
+    
+        var popup_0c43b6b72900c1c072c3761d0a673123 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_189f98abf880153b29b7ea4995c13508 = $(`<div id="html_189f98abf880153b29b7ea4995c13508" style="width: 100.0%; height: 100.0%;">Grand / LATTC Station</div>`)[0];
+                popup_0c43b6b72900c1c072c3761d0a673123.setContent(html_189f98abf880153b29b7ea4995c13508);
+            
+        
+
+        marker_2e8d449036ebb567c7d3855637d20233.bindPopup(popup_0c43b6b72900c1c072c3761d0a673123)
+        ;
+
+        
+    
+    
+            marker_2e8d449036ebb567c7d3855637d20233.bindTooltip(
+                `<div>
+                     Blue Line: Grand / LATTC Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d99f3c361cf6cb17247c26e06dd54c90 = L.marker(
+                [34.040735, -118.266118],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_47fcfc02970864b817dba189f9136a9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d99f3c361cf6cb17247c26e06dd54c90.setIcon(icon_47fcfc02970864b817dba189f9136a9a);
+        
+    
+        var popup_4c81f3b7e96dbc676f522d9799bc13ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af732652e6a8c6adb4893cf1009029cb = $(`<div id="html_af732652e6a8c6adb4893cf1009029cb" style="width: 100.0%; height: 100.0%;">Pico Station</div>`)[0];
+                popup_4c81f3b7e96dbc676f522d9799bc13ca.setContent(html_af732652e6a8c6adb4893cf1009029cb);
+            
+        
+
+        marker_d99f3c361cf6cb17247c26e06dd54c90.bindPopup(popup_4c81f3b7e96dbc676f522d9799bc13ca)
+        ;
+
+        
+    
+    
+            marker_d99f3c361cf6cb17247c26e06dd54c90.bindTooltip(
+                `<div>
+                     Blue/EXPO Line: Pico Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f42b1ea43711780dfaceba1de12f1717 = L.marker(
+                [34.04861, -118.258822],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_e902f933e3d747d6b92606486320f5c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f42b1ea43711780dfaceba1de12f1717.setIcon(icon_e902f933e3d747d6b92606486320f5c8);
+        
+    
+        var popup_cc6962117e2ae4cff84c72550514e4ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6486a61dbba33947a53177189d6e444 = $(`<div id="html_d6486a61dbba33947a53177189d6e444" style="width: 100.0%; height: 100.0%;">7th St / Metro Center Station - Metro Blue & Expo Lines</div>`)[0];
+                popup_cc6962117e2ae4cff84c72550514e4ff.setContent(html_d6486a61dbba33947a53177189d6e444);
+            
+        
+
+        marker_f42b1ea43711780dfaceba1de12f1717.bindPopup(popup_cc6962117e2ae4cff84c72550514e4ff)
+        ;
+
+        
+    
+    
+            marker_f42b1ea43711780dfaceba1de12f1717.bindTooltip(
+                `<div>
+                     Blue/EXPO Line: 7th St / Metro Center Station - Metro Blue & Expo Lines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc54c305661cffb729ab0f88afac3722 = L.marker(
+                [34.029112, -118.273603],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_3c760656d8ab1709f1e6522f2f876c44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fc54c305661cffb729ab0f88afac3722.setIcon(icon_3c760656d8ab1709f1e6522f2f876c44);
+        
+    
+        var popup_36a460a6aba544a42767cde0a669317d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_772663f560159728f006311a6bc82ca4 = $(`<div id="html_772663f560159728f006311a6bc82ca4" style="width: 100.0%; height: 100.0%;">LATTC / Ortho Institute Station</div>`)[0];
+                popup_36a460a6aba544a42767cde0a669317d.setContent(html_772663f560159728f006311a6bc82ca4);
+            
+        
+
+        marker_fc54c305661cffb729ab0f88afac3722.bindPopup(popup_36a460a6aba544a42767cde0a669317d)
+        ;
+
+        
+    
+    
+            marker_fc54c305661cffb729ab0f88afac3722.bindTooltip(
+                `<div>
+                     EXPO Line: LATTC / Ortho Institute Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a8409d632317234e703ee0237eb8441 = L.marker(
+                [34.022123, -118.278118],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_0cc69f3e6acab29dcd80b5e158696e66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2a8409d632317234e703ee0237eb8441.setIcon(icon_0cc69f3e6acab29dcd80b5e158696e66);
+        
+    
+        var popup_701c4ccf3acfc8e1393fba29b1674058 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecacc02913deaa130e055f063ec737a4 = $(`<div id="html_ecacc02913deaa130e055f063ec737a4" style="width: 100.0%; height: 100.0%;">Jefferson / USC Station</div>`)[0];
+                popup_701c4ccf3acfc8e1393fba29b1674058.setContent(html_ecacc02913deaa130e055f063ec737a4);
+            
+        
+
+        marker_2a8409d632317234e703ee0237eb8441.bindPopup(popup_701c4ccf3acfc8e1393fba29b1674058)
+        ;
+
+        
+    
+    
+            marker_2a8409d632317234e703ee0237eb8441.bindTooltip(
+                `<div>
+                     EXPO Line: Jefferson / USC Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_231d587e01b462e65e288bec6fa92967 = L.marker(
+                [34.018227, -118.285734],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_11735557de0c02ab3860cfe15a872efb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_231d587e01b462e65e288bec6fa92967.setIcon(icon_11735557de0c02ab3860cfe15a872efb);
+        
+    
+        var popup_fc318db75b12baf19e7e90189904bc72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_832f4fc484a94eebb15d98885ecd5671 = $(`<div id="html_832f4fc484a94eebb15d98885ecd5671" style="width: 100.0%; height: 100.0%;">Expo Park / USC Station</div>`)[0];
+                popup_fc318db75b12baf19e7e90189904bc72.setContent(html_832f4fc484a94eebb15d98885ecd5671);
+            
+        
+
+        marker_231d587e01b462e65e288bec6fa92967.bindPopup(popup_fc318db75b12baf19e7e90189904bc72)
+        ;
+
+        
+    
+    
+            marker_231d587e01b462e65e288bec6fa92967.bindTooltip(
+                `<div>
+                     EXPO Line: Expo Park / USC Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dac182056fd5fe00a67a38d0eea1b1ea = L.marker(
+                [34.018245, -118.29154],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_596bfae02f15cad1d7f465d47bad7c50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dac182056fd5fe00a67a38d0eea1b1ea.setIcon(icon_596bfae02f15cad1d7f465d47bad7c50);
+        
+    
+        var popup_4853223a6dcb23af4f89c03be2beaec1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a6d737ca56b75034df6c52f0a440667 = $(`<div id="html_0a6d737ca56b75034df6c52f0a440667" style="width: 100.0%; height: 100.0%;">Expo / Vermont Station</div>`)[0];
+                popup_4853223a6dcb23af4f89c03be2beaec1.setContent(html_0a6d737ca56b75034df6c52f0a440667);
+            
+        
+
+        marker_dac182056fd5fe00a67a38d0eea1b1ea.bindPopup(popup_4853223a6dcb23af4f89c03be2beaec1)
+        ;
+
+        
+    
+    
+            marker_dac182056fd5fe00a67a38d0eea1b1ea.bindTooltip(
+                `<div>
+                     EXPO Line: Expo / Vermont Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2473ee08a33a23f89034aae0be6aa28f = L.marker(
+                [34.018331, -118.30891],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_293aea46afb2a40b1797993121911fbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2473ee08a33a23f89034aae0be6aa28f.setIcon(icon_293aea46afb2a40b1797993121911fbf);
+        
+    
+        var popup_34a3ae024eaf71eb374aff68d0790044 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_936ae1433de140b7ab8918485b38985c = $(`<div id="html_936ae1433de140b7ab8918485b38985c" style="width: 100.0%; height: 100.0%;">Expo / Western Station</div>`)[0];
+                popup_34a3ae024eaf71eb374aff68d0790044.setContent(html_936ae1433de140b7ab8918485b38985c);
+            
+        
+
+        marker_2473ee08a33a23f89034aae0be6aa28f.bindPopup(popup_34a3ae024eaf71eb374aff68d0790044)
+        ;
+
+        
+    
+    
+            marker_2473ee08a33a23f89034aae0be6aa28f.bindTooltip(
+                `<div>
+                     EXPO Line: Expo / Western Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25c08e2ed1fc3bf0c62100f33926fee1 = L.marker(
+                [34.022526, -118.335078],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_2f6af697e41f0eee592c96a18e3a104e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_25c08e2ed1fc3bf0c62100f33926fee1.setIcon(icon_2f6af697e41f0eee592c96a18e3a104e);
+        
+    
+        var popup_4291424b830910d9cb5eb2c8931efcff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aaf829b1aacce8b09af0132c37c7a3bc = $(`<div id="html_aaf829b1aacce8b09af0132c37c7a3bc" style="width: 100.0%; height: 100.0%;">Expo / Crenshaw Station</div>`)[0];
+                popup_4291424b830910d9cb5eb2c8931efcff.setContent(html_aaf829b1aacce8b09af0132c37c7a3bc);
+            
+        
+
+        marker_25c08e2ed1fc3bf0c62100f33926fee1.bindPopup(popup_4291424b830910d9cb5eb2c8931efcff)
+        ;
+
+        
+    
+    
+            marker_25c08e2ed1fc3bf0c62100f33926fee1.bindTooltip(
+                `<div>
+                     EXPO Line: Expo / Crenshaw Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5ef45b3f43e11bf33188ae366a78329 = L.marker(
+                [34.023981, -118.346095],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_a046b7cae57cd876bdcca539c0f86489 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c5ef45b3f43e11bf33188ae366a78329.setIcon(icon_a046b7cae57cd876bdcca539c0f86489);
+        
+    
+        var popup_9dc412cf2b4836aa8704c4dfb502896e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7825ed335fb4b116aaa59f50a34766db = $(`<div id="html_7825ed335fb4b116aaa59f50a34766db" style="width: 100.0%; height: 100.0%;">Farmdale Station</div>`)[0];
+                popup_9dc412cf2b4836aa8704c4dfb502896e.setContent(html_7825ed335fb4b116aaa59f50a34766db);
+            
+        
+
+        marker_c5ef45b3f43e11bf33188ae366a78329.bindPopup(popup_9dc412cf2b4836aa8704c4dfb502896e)
+        ;
+
+        
+    
+    
+            marker_c5ef45b3f43e11bf33188ae366a78329.bindTooltip(
+                `<div>
+                     EXPO Line: Farmdale Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3d244471d309b02426b60a24b6b8a02 = L.marker(
+                [34.024803, -118.355159],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_97ad90ebae8096ff5d98f9b22dc13128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b3d244471d309b02426b60a24b6b8a02.setIcon(icon_97ad90ebae8096ff5d98f9b22dc13128);
+        
+    
+        var popup_58cd674f5d596c08d894fd2f3c2631d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_339f45b5e0e3378bac5bcc8b3cab6efd = $(`<div id="html_339f45b5e0e3378bac5bcc8b3cab6efd" style="width: 100.0%; height: 100.0%;">Expo / La Brea Station</div>`)[0];
+                popup_58cd674f5d596c08d894fd2f3c2631d8.setContent(html_339f45b5e0e3378bac5bcc8b3cab6efd);
+            
+        
+
+        marker_b3d244471d309b02426b60a24b6b8a02.bindPopup(popup_58cd674f5d596c08d894fd2f3c2631d8)
+        ;
+
+        
+    
+    
+            marker_b3d244471d309b02426b60a24b6b8a02.bindTooltip(
+                `<div>
+                     EXPO Line: Expo / La Brea Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74755dffcea525fd02f2446fdb403149 = L.marker(
+                [34.026355, -118.37212],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_c05f067e1423f1ea9563627e8613fc5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_74755dffcea525fd02f2446fdb403149.setIcon(icon_c05f067e1423f1ea9563627e8613fc5f);
+        
+    
+        var popup_a57b8535f5f700b7d57eb7974e21958f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1d40e69cbebe71cc046269c6b172ac0 = $(`<div id="html_a1d40e69cbebe71cc046269c6b172ac0" style="width: 100.0%; height: 100.0%;">La Cienega / Jefferson Station</div>`)[0];
+                popup_a57b8535f5f700b7d57eb7974e21958f.setContent(html_a1d40e69cbebe71cc046269c6b172ac0);
+            
+        
+
+        marker_74755dffcea525fd02f2446fdb403149.bindPopup(popup_a57b8535f5f700b7d57eb7974e21958f)
+        ;
+
+        
+    
+    
+            marker_74755dffcea525fd02f2446fdb403149.bindTooltip(
+                `<div>
+                     EXPO Line: La Cienega / Jefferson Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_974c594f5eec581adfb5629d686bc21c = L.marker(
+                [34.027896, -118.388986],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_31ed66a48af6669ddf9393aa366e1c13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_974c594f5eec581adfb5629d686bc21c.setIcon(icon_31ed66a48af6669ddf9393aa366e1c13);
+        
+    
+        var popup_e6927a57d2fb90526d8e9ac4353d776d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_316d640407227c6277b01325fa298ea1 = $(`<div id="html_316d640407227c6277b01325fa298ea1" style="width: 100.0%; height: 100.0%;">Culver City Station</div>`)[0];
+                popup_e6927a57d2fb90526d8e9ac4353d776d.setContent(html_316d640407227c6277b01325fa298ea1);
+            
+        
+
+        marker_974c594f5eec581adfb5629d686bc21c.bindPopup(popup_e6927a57d2fb90526d8e9ac4353d776d)
+        ;
+
+        
+    
+    
+            marker_974c594f5eec581adfb5629d686bc21c.bindTooltip(
+                `<div>
+                     EXPO Line: Culver City Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_771252297f7f2bf6c788cbe74df38ef0 = L.marker(
+                [33.76874, -118.189362],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_cb75b26f0df74f183a4b965a71fb3b4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_771252297f7f2bf6c788cbe74df38ef0.setIcon(icon_cb75b26f0df74f183a4b965a71fb3b4e);
+        
+    
+        var popup_8ffcea6b39836cd1abb5f48cb8ca6377 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4084eef01bbd582643504e16bf2e3714 = $(`<div id="html_4084eef01bbd582643504e16bf2e3714" style="width: 100.0%; height: 100.0%;">1st Street Station</div>`)[0];
+                popup_8ffcea6b39836cd1abb5f48cb8ca6377.setContent(html_4084eef01bbd582643504e16bf2e3714);
+            
+        
+
+        marker_771252297f7f2bf6c788cbe74df38ef0.bindPopup(popup_8ffcea6b39836cd1abb5f48cb8ca6377)
+        ;
+
+        
+    
+    
+            marker_771252297f7f2bf6c788cbe74df38ef0.bindTooltip(
+                `<div>
+                     Blue Line: 1st Street Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_866391f4d0982fb86991d2ce438e2f0d = L.marker(
+                [33.773598, -118.189412],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_b8fa18cb355a4ed88e48f49739c7e5a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_866391f4d0982fb86991d2ce438e2f0d.setIcon(icon_b8fa18cb355a4ed88e48f49739c7e5a9);
+        
+    
+        var popup_c98db7904a741e32c3b2fe6c4cc11ec0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25c804c620b698b38d022b803a016383 = $(`<div id="html_25c804c620b698b38d022b803a016383" style="width: 100.0%; height: 100.0%;">5th Street Station</div>`)[0];
+                popup_c98db7904a741e32c3b2fe6c4cc11ec0.setContent(html_25c804c620b698b38d022b803a016383);
+            
+        
+
+        marker_866391f4d0982fb86991d2ce438e2f0d.bindPopup(popup_c98db7904a741e32c3b2fe6c4cc11ec0)
+        ;
+
+        
+    
+    
+            marker_866391f4d0982fb86991d2ce438e2f0d.bindTooltip(
+                `<div>
+                     Blue Line: 5th Street Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_882a6346030f4df481c54a714ead5722 = L.marker(
+                [34.168504, -118.376808],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_95be2eff728d108a84cd1fa0e78bbf60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_882a6346030f4df481c54a714ead5722.setIcon(icon_95be2eff728d108a84cd1fa0e78bbf60);
+        
+    
+        var popup_97a8f65b608c494205d56dcfa9ca1a9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ce0ed0cb7b741ac0fa4ba1e75089126 = $(`<div id="html_9ce0ed0cb7b741ac0fa4ba1e75089126" style="width: 100.0%; height: 100.0%;">North Hollywood Station</div>`)[0];
+                popup_97a8f65b608c494205d56dcfa9ca1a9b.setContent(html_9ce0ed0cb7b741ac0fa4ba1e75089126);
+            
+        
+
+        marker_882a6346030f4df481c54a714ead5722.bindPopup(popup_97a8f65b608c494205d56dcfa9ca1a9b)
+        ;
+
+        
+    
+    
+            marker_882a6346030f4df481c54a714ead5722.bindTooltip(
+                `<div>
+                     Red Line: North Hollywood Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8a1c0527812ee1c24906b0900666cd2 = L.marker(
+                [34.140002, -118.362699],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_dcad5a50bbacccca50f0b9a721d29906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a8a1c0527812ee1c24906b0900666cd2.setIcon(icon_dcad5a50bbacccca50f0b9a721d29906);
+        
+    
+        var popup_e97adc581485176a3967ac79d6973752 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c51aa46a6363201bce845e4a763f75cf = $(`<div id="html_c51aa46a6363201bce845e4a763f75cf" style="width: 100.0%; height: 100.0%;">Universal / Studio City Station</div>`)[0];
+                popup_e97adc581485176a3967ac79d6973752.setContent(html_c51aa46a6363201bce845e4a763f75cf);
+            
+        
+
+        marker_a8a1c0527812ee1c24906b0900666cd2.bindPopup(popup_e97adc581485176a3967ac79d6973752)
+        ;
+
+        
+    
+    
+            marker_a8a1c0527812ee1c24906b0900666cd2.bindTooltip(
+                `<div>
+                     Red Line: Universal / Studio City Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12f22b3a5d13335ef0eea233457fd642 = L.marker(
+                [34.101547, -118.338549],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_5bbf77589f32d5f4526d9879e4eda548 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_12f22b3a5d13335ef0eea233457fd642.setIcon(icon_5bbf77589f32d5f4526d9879e4eda548);
+        
+    
+        var popup_f3b025971d5bdede4a3a7200bf726444 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92b68864a4085058fa4aca12102f1dd1 = $(`<div id="html_92b68864a4085058fa4aca12102f1dd1" style="width: 100.0%; height: 100.0%;">Hollywood / Highland Station</div>`)[0];
+                popup_f3b025971d5bdede4a3a7200bf726444.setContent(html_92b68864a4085058fa4aca12102f1dd1);
+            
+        
+
+        marker_12f22b3a5d13335ef0eea233457fd642.bindPopup(popup_f3b025971d5bdede4a3a7200bf726444)
+        ;
+
+        
+    
+    
+            marker_12f22b3a5d13335ef0eea233457fd642.bindTooltip(
+                `<div>
+                     Red Line: Hollywood / Highland Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb9d0d9a242d19e19c608547d03cc1d9 = L.marker(
+                [34.10163, -118.32518],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_c79d25ea1d90edfe8dfe7a9104ee4037 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb9d0d9a242d19e19c608547d03cc1d9.setIcon(icon_c79d25ea1d90edfe8dfe7a9104ee4037);
+        
+    
+        var popup_2b085f3ded197015cdbe4a159fc4b6bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_184ef518420651a0becec369529182a6 = $(`<div id="html_184ef518420651a0becec369529182a6" style="width: 100.0%; height: 100.0%;">Hollywood / Vine Station</div>`)[0];
+                popup_2b085f3ded197015cdbe4a159fc4b6bd.setContent(html_184ef518420651a0becec369529182a6);
+            
+        
+
+        marker_bb9d0d9a242d19e19c608547d03cc1d9.bindPopup(popup_2b085f3ded197015cdbe4a159fc4b6bd)
+        ;
+
+        
+    
+    
+            marker_bb9d0d9a242d19e19c608547d03cc1d9.bindTooltip(
+                `<div>
+                     Red Line: Hollywood / Vine Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d1dcb712f8911892868b7d50f7045ce = L.marker(
+                [34.101737, -118.308117],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_eba34e95424d26a1dc1c8fc02fbafe3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d1dcb712f8911892868b7d50f7045ce.setIcon(icon_eba34e95424d26a1dc1c8fc02fbafe3a);
+        
+    
+        var popup_e212d8eed69bce33f5be35b1063312dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_257e4c68c688dcad1c18b0901fd58c02 = $(`<div id="html_257e4c68c688dcad1c18b0901fd58c02" style="width: 100.0%; height: 100.0%;">Hollywood / Western Station</div>`)[0];
+                popup_e212d8eed69bce33f5be35b1063312dd.setContent(html_257e4c68c688dcad1c18b0901fd58c02);
+            
+        
+
+        marker_0d1dcb712f8911892868b7d50f7045ce.bindPopup(popup_e212d8eed69bce33f5be35b1063312dd)
+        ;
+
+        
+    
+    
+            marker_0d1dcb712f8911892868b7d50f7045ce.bindTooltip(
+                `<div>
+                     Red Line: Hollywood / Western Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0217e64fa2a630431a1b192ae52d5a08 = L.marker(
+                [34.097708, -118.291756],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_3a4139451df4e3f28a18c17986e74c4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0217e64fa2a630431a1b192ae52d5a08.setIcon(icon_3a4139451df4e3f28a18c17986e74c4b);
+        
+    
+        var popup_cde0ea3d28817d1662603bf25b9eed52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cddc1f911f4edae212647d1c2e44cbb9 = $(`<div id="html_cddc1f911f4edae212647d1c2e44cbb9" style="width: 100.0%; height: 100.0%;">Vermont / Sunset Station</div>`)[0];
+                popup_cde0ea3d28817d1662603bf25b9eed52.setContent(html_cddc1f911f4edae212647d1c2e44cbb9);
+            
+        
+
+        marker_0217e64fa2a630431a1b192ae52d5a08.bindPopup(popup_cde0ea3d28817d1662603bf25b9eed52)
+        ;
+
+        
+    
+    
+            marker_0217e64fa2a630431a1b192ae52d5a08.bindTooltip(
+                `<div>
+                     Red Line: Vermont / Sunset Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13faeb5ba46124adeef093f8c99b5d70 = L.marker(
+                [34.08991, -118.29173],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_b0f4705fd8d68b9fe4685860e7eeb5d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13faeb5ba46124adeef093f8c99b5d70.setIcon(icon_b0f4705fd8d68b9fe4685860e7eeb5d0);
+        
+    
+        var popup_7c4caffce0267168ae75be11569bc049 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4a203c7cab651321fb1cd3787a8cd69 = $(`<div id="html_b4a203c7cab651321fb1cd3787a8cd69" style="width: 100.0%; height: 100.0%;">Vermont / Santa Monica Station</div>`)[0];
+                popup_7c4caffce0267168ae75be11569bc049.setContent(html_b4a203c7cab651321fb1cd3787a8cd69);
+            
+        
+
+        marker_13faeb5ba46124adeef093f8c99b5d70.bindPopup(popup_7c4caffce0267168ae75be11569bc049)
+        ;
+
+        
+    
+    
+            marker_13faeb5ba46124adeef093f8c99b5d70.bindTooltip(
+                `<div>
+                     Red Line: Vermont / Santa Monica Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_280ec8bf7b370a0e5dff14143a454089 = L.marker(
+                [34.076526, -118.291686],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_0351baab472e725fa5d0298880e62e8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_280ec8bf7b370a0e5dff14143a454089.setIcon(icon_0351baab472e725fa5d0298880e62e8d);
+        
+    
+        var popup_44d51ddc965c7754c002676540690c14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8822becc9f27c2e61c2116e4416a0073 = $(`<div id="html_8822becc9f27c2e61c2116e4416a0073" style="width: 100.0%; height: 100.0%;">Vermont / Beverly Station</div>`)[0];
+                popup_44d51ddc965c7754c002676540690c14.setContent(html_8822becc9f27c2e61c2116e4416a0073);
+            
+        
+
+        marker_280ec8bf7b370a0e5dff14143a454089.bindPopup(popup_44d51ddc965c7754c002676540690c14)
+        ;
+
+        
+    
+    
+            marker_280ec8bf7b370a0e5dff14143a454089.bindTooltip(
+                `<div>
+                     Red Line: Vermont / Beverly Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8aa350c9e48fbf860643096f3601e15b = L.marker(
+                [34.062701, -118.290082],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_320c617a11e1b1229353ce2c286de07a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_8aa350c9e48fbf860643096f3601e15b.setIcon(icon_320c617a11e1b1229353ce2c286de07a);
+        
+    
+        var popup_dba0ddb04822e62dd7f8b94b5b252e05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fd38c7a74004f96cdc90bc389adc4e0 = $(`<div id="html_3fd38c7a74004f96cdc90bc389adc4e0" style="width: 100.0%; height: 100.0%;">Wilshire / Vermont Station</div>`)[0];
+                popup_dba0ddb04822e62dd7f8b94b5b252e05.setContent(html_3fd38c7a74004f96cdc90bc389adc4e0);
+            
+        
+
+        marker_8aa350c9e48fbf860643096f3601e15b.bindPopup(popup_dba0ddb04822e62dd7f8b94b5b252e05)
+        ;
+
+        
+    
+    
+            marker_8aa350c9e48fbf860643096f3601e15b.bindTooltip(
+                `<div>
+                     Red/Purple Line: Wilshire / Vermont Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c66b3f55ca62621362fbb717a875c8cf = L.marker(
+                [34.056368, -118.274879],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_06fff2c22892f6d32ba444c144260159 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_c66b3f55ca62621362fbb717a875c8cf.setIcon(icon_06fff2c22892f6d32ba444c144260159);
+        
+    
+        var popup_26ec7e3cc6b45a348b25e8a33f3795c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_786891c1320d49b7d9b969ed364dfaa4 = $(`<div id="html_786891c1320d49b7d9b969ed364dfaa4" style="width: 100.0%; height: 100.0%;">Westlake / MacArthur Park Station</div>`)[0];
+                popup_26ec7e3cc6b45a348b25e8a33f3795c0.setContent(html_786891c1320d49b7d9b969ed364dfaa4);
+            
+        
+
+        marker_c66b3f55ca62621362fbb717a875c8cf.bindPopup(popup_26ec7e3cc6b45a348b25e8a33f3795c0)
+        ;
+
+        
+    
+    
+            marker_c66b3f55ca62621362fbb717a875c8cf.bindTooltip(
+                `<div>
+                     Red/Purple Line: Westlake / MacArthur Park Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33848b26d9a3c53c9935c343ae570d89 = L.marker(
+                [34.048634, -118.258682],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_954b3baeef183e33beb9dcf413b081aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_33848b26d9a3c53c9935c343ae570d89.setIcon(icon_954b3baeef183e33beb9dcf413b081aa);
+        
+    
+        var popup_a2668e7253fd7f3fbc3e38ea6346a5a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab14d6556ace106e331dc2f73c7fbdbc = $(`<div id="html_ab14d6556ace106e331dc2f73c7fbdbc" style="width: 100.0%; height: 100.0%;">7th St / Metro Center Station - Metro Red & Purple Lines</div>`)[0];
+                popup_a2668e7253fd7f3fbc3e38ea6346a5a9.setContent(html_ab14d6556ace106e331dc2f73c7fbdbc);
+            
+        
+
+        marker_33848b26d9a3c53c9935c343ae570d89.bindPopup(popup_a2668e7253fd7f3fbc3e38ea6346a5a9)
+        ;
+
+        
+    
+    
+            marker_33848b26d9a3c53c9935c343ae570d89.bindTooltip(
+                `<div>
+                     Red/Purple Line: 7th St / Metro Center Station - Metro Red & Purple Lines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94b780276244684f7a6ab6d3f5dc915f = L.marker(
+                [34.049316, -118.251259],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_28a2db72bf11ef561052e6f950c07eb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_94b780276244684f7a6ab6d3f5dc915f.setIcon(icon_28a2db72bf11ef561052e6f950c07eb1);
+        
+    
+        var popup_b4c6d02874ba20589e0bf6f82c489141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c0c8d0dea72fad5bb3ff7d8273ec16b = $(`<div id="html_0c0c8d0dea72fad5bb3ff7d8273ec16b" style="width: 100.0%; height: 100.0%;">Pershing Square Station</div>`)[0];
+                popup_b4c6d02874ba20589e0bf6f82c489141.setContent(html_0c0c8d0dea72fad5bb3ff7d8273ec16b);
+            
+        
+
+        marker_94b780276244684f7a6ab6d3f5dc915f.bindPopup(popup_b4c6d02874ba20589e0bf6f82c489141)
+        ;
+
+        
+    
+    
+            marker_94b780276244684f7a6ab6d3f5dc915f.bindTooltip(
+                `<div>
+                     Red/Purple Line: Pershing Square Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47fb7a14c20b2b5fa648e8aa0ea36df0 = L.marker(
+                [34.0549, -118.246057],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_cb9380a704a67448364c8757ddd6e92c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_47fb7a14c20b2b5fa648e8aa0ea36df0.setIcon(icon_cb9380a704a67448364c8757ddd6e92c);
+        
+    
+        var popup_a74cc4755c22552a2db702fb1c16d228 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efac6490509c1b17dcabcecb1524875b = $(`<div id="html_efac6490509c1b17dcabcecb1524875b" style="width: 100.0%; height: 100.0%;">Civic Center / Grand Park Station</div>`)[0];
+                popup_a74cc4755c22552a2db702fb1c16d228.setContent(html_efac6490509c1b17dcabcecb1524875b);
+            
+        
+
+        marker_47fb7a14c20b2b5fa648e8aa0ea36df0.bindPopup(popup_a74cc4755c22552a2db702fb1c16d228)
+        ;
+
+        
+    
+    
+            marker_47fb7a14c20b2b5fa648e8aa0ea36df0.bindTooltip(
+                `<div>
+                     Red/Purple Line: Civic Center / Grand Park Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddcf218ee55dc80d8f9a960e838251b0 = L.marker(
+                [34.056197, -118.234249],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_7dc80ff0ceaf3d77e8e7d2010fce4c74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_ddcf218ee55dc80d8f9a960e838251b0.setIcon(icon_7dc80ff0ceaf3d77e8e7d2010fce4c74);
+        
+    
+        var popup_ab21e2e8d8870cbf0ebb4eba27fe6878 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bafda56363a4721d80e8c1abbea28ab = $(`<div id="html_2bafda56363a4721d80e8c1abbea28ab" style="width: 100.0%; height: 100.0%;">Union Station - Metro Red & Purple Lines</div>`)[0];
+                popup_ab21e2e8d8870cbf0ebb4eba27fe6878.setContent(html_2bafda56363a4721d80e8c1abbea28ab);
+            
+        
+
+        marker_ddcf218ee55dc80d8f9a960e838251b0.bindPopup(popup_ab21e2e8d8870cbf0ebb4eba27fe6878)
+        ;
+
+        
+    
+    
+            marker_ddcf218ee55dc80d8f9a960e838251b0.bindTooltip(
+                `<div>
+                     Red/Purple Line: Union Station - Metro Red & Purple Lines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70638a7597766698559da1823970565e = L.marker(
+                [34.061753, -118.301458],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_a965fb14515b3b746a01a4f487817e8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_70638a7597766698559da1823970565e.setIcon(icon_a965fb14515b3b746a01a4f487817e8b);
+        
+    
+        var popup_63d33b1cd996eea15411b9490a4e0f4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0442d5af0dad95f2834cdf111a629c2a = $(`<div id="html_0442d5af0dad95f2834cdf111a629c2a" style="width: 100.0%; height: 100.0%;">Wilshire / Normandie Station</div>`)[0];
+                popup_63d33b1cd996eea15411b9490a4e0f4e.setContent(html_0442d5af0dad95f2834cdf111a629c2a);
+            
+        
+
+        marker_70638a7597766698559da1823970565e.bindPopup(popup_63d33b1cd996eea15411b9490a4e0f4e)
+        ;
+
+        
+    
+    
+            marker_70638a7597766698559da1823970565e.bindTooltip(
+                `<div>
+                     Purple Line: Wilshire / Normandie Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1523ea265ecb8f301588a9a30f081e09 = L.marker(
+                [34.061689, -118.308756],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_1b240d8c3266d20179c74b74f4402ff1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1523ea265ecb8f301588a9a30f081e09.setIcon(icon_1b240d8c3266d20179c74b74f4402ff1);
+        
+    
+        var popup_c2f27e4564acdf105b759069ab7c9b76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c074ec07a7bdb38aca32a923e86b155 = $(`<div id="html_0c074ec07a7bdb38aca32a923e86b155" style="width: 100.0%; height: 100.0%;">Wilshire / Western Station</div>`)[0];
+                popup_c2f27e4564acdf105b759069ab7c9b76.setContent(html_0c074ec07a7bdb38aca32a923e86b155);
+            
+        
+
+        marker_1523ea265ecb8f301588a9a30f081e09.bindPopup(popup_c2f27e4564acdf105b759069ab7c9b76)
+        ;
+
+        
+    
+    
+            marker_1523ea265ecb8f301588a9a30f081e09.bindTooltip(
+                `<div>
+                     Purple Line: Wilshire / Western Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23e6a8e5db0c6ba88e8499750619a809 = L.marker(
+                [33.89464, -118.369196],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_d88d5de68872273f3d17d9324e3f582e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_23e6a8e5db0c6ba88e8499750619a809.setIcon(icon_d88d5de68872273f3d17d9324e3f582e);
+        
+    
+        var popup_ce40f0d4671a117335170ca2e1048d09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72bf937abcf366f0079154e9a25a2468 = $(`<div id="html_72bf937abcf366f0079154e9a25a2468" style="width: 100.0%; height: 100.0%;">Redondo Beach Station</div>`)[0];
+                popup_ce40f0d4671a117335170ca2e1048d09.setContent(html_72bf937abcf366f0079154e9a25a2468);
+            
+        
+
+        marker_23e6a8e5db0c6ba88e8499750619a809.bindPopup(popup_ce40f0d4671a117335170ca2e1048d09)
+        ;
+
+        
+    
+    
+            marker_23e6a8e5db0c6ba88e8499750619a809.bindTooltip(
+                `<div>
+                     Green Line: Redondo Beach Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db96049057a4184c8bebae3156a6c9fe = L.marker(
+                [33.905299, -118.383113],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_b68d0b97e725e471909ccb7bd3a211b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_db96049057a4184c8bebae3156a6c9fe.setIcon(icon_b68d0b97e725e471909ccb7bd3a211b5);
+        
+    
+        var popup_3ca28117a034965808b4c2a7fa85f685 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54d095a3365a3683e32a16ded9f50312 = $(`<div id="html_54d095a3365a3683e32a16ded9f50312" style="width: 100.0%; height: 100.0%;">Douglas Station</div>`)[0];
+                popup_3ca28117a034965808b4c2a7fa85f685.setContent(html_54d095a3365a3683e32a16ded9f50312);
+            
+        
+
+        marker_db96049057a4184c8bebae3156a6c9fe.bindPopup(popup_3ca28117a034965808b4c2a7fa85f685)
+        ;
+
+        
+    
+    
+            marker_db96049057a4184c8bebae3156a6c9fe.bindTooltip(
+                `<div>
+                     Green Line: Douglas Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73e4ed48d9d27afa4144e6fb4973c88c = L.marker(
+                [33.916063, -118.386539],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_b7346628fd7c6c9d099e402ebcaea0f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_73e4ed48d9d27afa4144e6fb4973c88c.setIcon(icon_b7346628fd7c6c9d099e402ebcaea0f4);
+        
+    
+        var popup_b59c49c837cb29d15fd60c1e3e34b84c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aae1ac3a80207c94775796d5defecb0e = $(`<div id="html_aae1ac3a80207c94775796d5defecb0e" style="width: 100.0%; height: 100.0%;">El Segundo Station</div>`)[0];
+                popup_b59c49c837cb29d15fd60c1e3e34b84c.setContent(html_aae1ac3a80207c94775796d5defecb0e);
+            
+        
+
+        marker_73e4ed48d9d27afa4144e6fb4973c88c.bindPopup(popup_b59c49c837cb29d15fd60c1e3e34b84c)
+        ;
+
+        
+    
+    
+            marker_73e4ed48d9d27afa4144e6fb4973c88c.bindTooltip(
+                `<div>
+                     Green Line: El Segundo Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5acdc003990813223ae5ca7ddc964c25 = L.marker(
+                [33.9232, -118.387572],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_e0ad1a6508bc3b96a03224163bbcc7a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5acdc003990813223ae5ca7ddc964c25.setIcon(icon_e0ad1a6508bc3b96a03224163bbcc7a8);
+        
+    
+        var popup_5ad55dd62628cc0b70c734bece23593c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_311b7941562af58ed50d582e76da1063 = $(`<div id="html_311b7941562af58ed50d582e76da1063" style="width: 100.0%; height: 100.0%;">Mariposa Station</div>`)[0];
+                popup_5ad55dd62628cc0b70c734bece23593c.setContent(html_311b7941562af58ed50d582e76da1063);
+            
+        
+
+        marker_5acdc003990813223ae5ca7ddc964c25.bindPopup(popup_5ad55dd62628cc0b70c734bece23593c)
+        ;
+
+        
+    
+    
+            marker_5acdc003990813223ae5ca7ddc964c25.bindTooltip(
+                `<div>
+                     Green Line: Mariposa Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb5f395c73c4906b4facf34eed3b776d = L.marker(
+                [33.929621, -118.377134],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_674b94d52943f1b716f61613cc04ffb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cb5f395c73c4906b4facf34eed3b776d.setIcon(icon_674b94d52943f1b716f61613cc04ffb2);
+        
+    
+        var popup_92399a010e3d20cffd3eaf74a94adfc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0adbcc52f5015ae327aff371e4ab2946 = $(`<div id="html_0adbcc52f5015ae327aff371e4ab2946" style="width: 100.0%; height: 100.0%;">Aviation / LAX Station</div>`)[0];
+                popup_92399a010e3d20cffd3eaf74a94adfc9.setContent(html_0adbcc52f5015ae327aff371e4ab2946);
+            
+        
+
+        marker_cb5f395c73c4906b4facf34eed3b776d.bindPopup(popup_92399a010e3d20cffd3eaf74a94adfc9)
+        ;
+
+        
+    
+    
+            marker_cb5f395c73c4906b4facf34eed3b776d.bindTooltip(
+                `<div>
+                     Green Line: Aviation / LAX Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f266d44a70c38038629a2cac3975116 = L.marker(
+                [33.933408, -118.351602],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_3db8aa34ece79cb2cfb527fcf3ac0187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6f266d44a70c38038629a2cac3975116.setIcon(icon_3db8aa34ece79cb2cfb527fcf3ac0187);
+        
+    
+        var popup_e6882ca5eb0b2ecd9fa61d9d335000f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4a962f5529547cbf55f2b2b802e5319 = $(`<div id="html_f4a962f5529547cbf55f2b2b802e5319" style="width: 100.0%; height: 100.0%;">Hawthorne / Lennox Station</div>`)[0];
+                popup_e6882ca5eb0b2ecd9fa61d9d335000f6.setContent(html_f4a962f5529547cbf55f2b2b802e5319);
+            
+        
+
+        marker_6f266d44a70c38038629a2cac3975116.bindPopup(popup_e6882ca5eb0b2ecd9fa61d9d335000f6)
+        ;
+
+        
+    
+    
+            marker_6f266d44a70c38038629a2cac3975116.bindTooltip(
+                `<div>
+                     Green Line: Hawthorne / Lennox Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ced7be6cdada31fd01ebb69a7e47f5ab = L.marker(
+                [33.925201, -118.32655],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_53c97c0382647cf45c3e29da8779fb4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ced7be6cdada31fd01ebb69a7e47f5ab.setIcon(icon_53c97c0382647cf45c3e29da8779fb4f);
+        
+    
+        var popup_1ed83396b108723ad5d11ecb8c7f74ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b91e1447adc616361bd86ba3e92f9f7 = $(`<div id="html_9b91e1447adc616361bd86ba3e92f9f7" style="width: 100.0%; height: 100.0%;">Crenshaw Station</div>`)[0];
+                popup_1ed83396b108723ad5d11ecb8c7f74ef.setContent(html_9b91e1447adc616361bd86ba3e92f9f7);
+            
+        
+
+        marker_ced7be6cdada31fd01ebb69a7e47f5ab.bindPopup(popup_1ed83396b108723ad5d11ecb8c7f74ef)
+        ;
+
+        
+    
+    
+            marker_ced7be6cdada31fd01ebb69a7e47f5ab.bindTooltip(
+                `<div>
+                     Green Line: Crenshaw Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52f201640b947bc335210e34c755d570 = L.marker(
+                [33.928683, -118.291733],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_825816e97c14c5337996758577f964b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_52f201640b947bc335210e34c755d570.setIcon(icon_825816e97c14c5337996758577f964b0);
+        
+    
+        var popup_9d325966572a2b6320f60646db8b6ed3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_160232c5a3e5aa0254c471e31e3b958a = $(`<div id="html_160232c5a3e5aa0254c471e31e3b958a" style="width: 100.0%; height: 100.0%;">Vermont / Athens Station</div>`)[0];
+                popup_9d325966572a2b6320f60646db8b6ed3.setContent(html_160232c5a3e5aa0254c471e31e3b958a);
+            
+        
+
+        marker_52f201640b947bc335210e34c755d570.bindPopup(popup_9d325966572a2b6320f60646db8b6ed3)
+        ;
+
+        
+    
+    
+            marker_52f201640b947bc335210e34c755d570.bindTooltip(
+                `<div>
+                     Green Line: Vermont / Athens Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_007057210c55b35b60a4f9888404790e = L.marker(
+                [33.928714, -118.2811],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_66cc09beda8829cdd4981ca342642034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_007057210c55b35b60a4f9888404790e.setIcon(icon_66cc09beda8829cdd4981ca342642034);
+        
+    
+        var popup_f1c34e98bc0bdaf0555ace5ae716f9af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9620d906444b61dcbf9b69a20c671475 = $(`<div id="html_9620d906444b61dcbf9b69a20c671475" style="width: 100.0%; height: 100.0%;">Harbor Freeway Station</div>`)[0];
+                popup_f1c34e98bc0bdaf0555ace5ae716f9af.setContent(html_9620d906444b61dcbf9b69a20c671475);
+            
+        
+
+        marker_007057210c55b35b60a4f9888404790e.bindPopup(popup_f1c34e98bc0bdaf0555ace5ae716f9af)
+        ;
+
+        
+    
+    
+            marker_007057210c55b35b60a4f9888404790e.bindTooltip(
+                `<div>
+                     Green Line: Harbor Freeway Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38f5a7c7bdc2d4186cc917926b9137d3 = L.marker(
+                [33.927465, -118.265217],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_13e569f9de72a7239c045fc00bb4c099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_38f5a7c7bdc2d4186cc917926b9137d3.setIcon(icon_13e569f9de72a7239c045fc00bb4c099);
+        
+    
+        var popup_13db1d2651cc2ef40196d75aaec3d380 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fc465b9076bac0717ee40b1a70f949c = $(`<div id="html_6fc465b9076bac0717ee40b1a70f949c" style="width: 100.0%; height: 100.0%;">Avalon Station</div>`)[0];
+                popup_13db1d2651cc2ef40196d75aaec3d380.setContent(html_6fc465b9076bac0717ee40b1a70f949c);
+            
+        
+
+        marker_38f5a7c7bdc2d4186cc917926b9137d3.bindPopup(popup_13db1d2651cc2ef40196d75aaec3d380)
+        ;
+
+        
+    
+    
+            marker_38f5a7c7bdc2d4186cc917926b9137d3.bindTooltip(
+                `<div>
+                     Green Line: Avalon Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b75ceeaf56f7cf4fe014d43c8dfff96 = L.marker(
+                [33.928258, -118.238052],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_aee545ab18b6aef4e791679b100978e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5b75ceeaf56f7cf4fe014d43c8dfff96.setIcon(icon_aee545ab18b6aef4e791679b100978e0);
+        
+    
+        var popup_c45a63650fb4d074eb5ed63e292e57a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccfee23787194dbaa89b6fb125538f86 = $(`<div id="html_ccfee23787194dbaa89b6fb125538f86" style="width: 100.0%; height: 100.0%;">Willowbrook - Rosa Parks Station - Metro Green Line</div>`)[0];
+                popup_c45a63650fb4d074eb5ed63e292e57a2.setContent(html_ccfee23787194dbaa89b6fb125538f86);
+            
+        
+
+        marker_5b75ceeaf56f7cf4fe014d43c8dfff96.bindPopup(popup_c45a63650fb4d074eb5ed63e292e57a2)
+        ;
+
+        
+    
+    
+            marker_5b75ceeaf56f7cf4fe014d43c8dfff96.bindTooltip(
+                `<div>
+                     Green Line: Willowbrook - Rosa Parks Station - Metro Green Line
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13cc979d44f9a321436de7d2b818bd89 = L.marker(
+                [33.92488, -118.209945],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_f0ee8ee69e1a4b1405c2592857a983d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_13cc979d44f9a321436de7d2b818bd89.setIcon(icon_f0ee8ee69e1a4b1405c2592857a983d1);
+        
+    
+        var popup_15a41352e15567f2b5e029c3a32e6bec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb08ff8bdeb7d501421d36c02b082c1d = $(`<div id="html_cb08ff8bdeb7d501421d36c02b082c1d" style="width: 100.0%; height: 100.0%;">Long Beach Blvd Station</div>`)[0];
+                popup_15a41352e15567f2b5e029c3a32e6bec.setContent(html_cb08ff8bdeb7d501421d36c02b082c1d);
+            
+        
+
+        marker_13cc979d44f9a321436de7d2b818bd89.bindPopup(popup_15a41352e15567f2b5e029c3a32e6bec)
+        ;
+
+        
+    
+    
+            marker_13cc979d44f9a321436de7d2b818bd89.bindTooltip(
+                `<div>
+                     Green Line: Long Beach Blvd Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c0ee9b7ab7672bbc789a2c3b0581a42 = L.marker(
+                [33.91307, -118.1406],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_f881eb038306d114d0e8e3742f28910f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0c0ee9b7ab7672bbc789a2c3b0581a42.setIcon(icon_f881eb038306d114d0e8e3742f28910f);
+        
+    
+        var popup_8b9f60e0cf5257adc4123c637c6dceae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfbc3a3feb764063f17eff1621a904b9 = $(`<div id="html_cfbc3a3feb764063f17eff1621a904b9" style="width: 100.0%; height: 100.0%;">Lakewood Blvd Station</div>`)[0];
+                popup_8b9f60e0cf5257adc4123c637c6dceae.setContent(html_cfbc3a3feb764063f17eff1621a904b9);
+            
+        
+
+        marker_0c0ee9b7ab7672bbc789a2c3b0581a42.bindPopup(popup_8b9f60e0cf5257adc4123c637c6dceae)
+        ;
+
+        
+    
+    
+            marker_0c0ee9b7ab7672bbc789a2c3b0581a42.bindTooltip(
+                `<div>
+                     Green Line: Lakewood Blvd Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58314292622a291b4b3ac58a9fbc6a17 = L.marker(
+                [33.914033, -118.104717],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_528d3c15eb84746496440f09adc2913b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_58314292622a291b4b3ac58a9fbc6a17.setIcon(icon_528d3c15eb84746496440f09adc2913b);
+        
+    
+        var popup_9b4d4320376732c76215882da8c570bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a18d7af252d3670094119f8356b63027 = $(`<div id="html_a18d7af252d3670094119f8356b63027" style="width: 100.0%; height: 100.0%;">Norwalk Station</div>`)[0];
+                popup_9b4d4320376732c76215882da8c570bc.setContent(html_a18d7af252d3670094119f8356b63027);
+            
+        
+
+        marker_58314292622a291b4b3ac58a9fbc6a17.bindPopup(popup_9b4d4320376732c76215882da8c570bc)
+        ;
+
+        
+    
+    
+            marker_58314292622a291b4b3ac58a9fbc6a17.bindTooltip(
+                `<div>
+                     Green Line: Norwalk Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95a2949aedcea4c142477ec5267181a0 = L.marker(
+                [34.033398, -118.154469],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_f35927c68e0ab2b291dcf2744b8838c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_95a2949aedcea4c142477ec5267181a0.setIcon(icon_f35927c68e0ab2b291dcf2744b8838c5);
+        
+    
+        var popup_0f01b0960881fd513fd62b1193136f8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87a2039c6144ea7770bac92a0f494564 = $(`<div id="html_87a2039c6144ea7770bac92a0f494564" style="width: 100.0%; height: 100.0%;">Atlantic Station</div>`)[0];
+                popup_0f01b0960881fd513fd62b1193136f8d.setContent(html_87a2039c6144ea7770bac92a0f494564);
+            
+        
+
+        marker_95a2949aedcea4c142477ec5267181a0.bindPopup(popup_0f01b0960881fd513fd62b1193136f8d)
+        ;
+
+        
+    
+    
+            marker_95a2949aedcea4c142477ec5267181a0.bindTooltip(
+                `<div>
+                     Gold Line: Atlantic Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efd1799943fd2141a9f1b10254c5cecf = L.marker(
+                [34.033364, -118.161206],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_a5f27f5ecc2facf3671189311b18c6e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_efd1799943fd2141a9f1b10254c5cecf.setIcon(icon_a5f27f5ecc2facf3671189311b18c6e9);
+        
+    
+        var popup_2249e462b90c11f7433c8b71f551b448 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e5e3a2dbb20951fb134dfeb086fd694 = $(`<div id="html_0e5e3a2dbb20951fb134dfeb086fd694" style="width: 100.0%; height: 100.0%;">East LA Civic Center Station</div>`)[0];
+                popup_2249e462b90c11f7433c8b71f551b448.setContent(html_0e5e3a2dbb20951fb134dfeb086fd694);
+            
+        
+
+        marker_efd1799943fd2141a9f1b10254c5cecf.bindPopup(popup_2249e462b90c11f7433c8b71f551b448)
+        ;
+
+        
+    
+    
+            marker_efd1799943fd2141a9f1b10254c5cecf.bindTooltip(
+                `<div>
+                     Gold Line: East LA Civic Center Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa0fed2acc262e58565347c5e392e04c = L.marker(
+                [34.033319, -118.16814],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_c07cecf37c538bfd4a57b1d28badf30d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_fa0fed2acc262e58565347c5e392e04c.setIcon(icon_c07cecf37c538bfd4a57b1d28badf30d);
+        
+    
+        var popup_550c3a9478a2e9c877e250a98a309274 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed8df07161963db4762d6f7a52850d39 = $(`<div id="html_ed8df07161963db4762d6f7a52850d39" style="width: 100.0%; height: 100.0%;">Maravilla Station</div>`)[0];
+                popup_550c3a9478a2e9c877e250a98a309274.setContent(html_ed8df07161963db4762d6f7a52850d39);
+            
+        
+
+        marker_fa0fed2acc262e58565347c5e392e04c.bindPopup(popup_550c3a9478a2e9c877e250a98a309274)
+        ;
+
+        
+    
+    
+            marker_fa0fed2acc262e58565347c5e392e04c.bindTooltip(
+                `<div>
+                     Gold Line: Maravilla Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79746e7875871b6f9d3737f630b78c5f = L.marker(
+                [34.0343, -118.192182],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_207392a2a0bcef2bd709414e70da04a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_79746e7875871b6f9d3737f630b78c5f.setIcon(icon_207392a2a0bcef2bd709414e70da04a7);
+        
+    
+        var popup_79c194acd551927cfd2ef11f7f165fe4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b563417d817066254db1bc1259dad2cb = $(`<div id="html_b563417d817066254db1bc1259dad2cb" style="width: 100.0%; height: 100.0%;">Indiana Station</div>`)[0];
+                popup_79c194acd551927cfd2ef11f7f165fe4.setContent(html_b563417d817066254db1bc1259dad2cb);
+            
+        
+
+        marker_79746e7875871b6f9d3737f630b78c5f.bindPopup(popup_79c194acd551927cfd2ef11f7f165fe4)
+        ;
+
+        
+    
+    
+            marker_79746e7875871b6f9d3737f630b78c5f.bindTooltip(
+                `<div>
+                     Gold Line: Indiana Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70be583e857419df172b1f3d8c90363c = L.marker(
+                [34.043747, -118.210061],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_389890f018796874c1c78e50451ded33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_70be583e857419df172b1f3d8c90363c.setIcon(icon_389890f018796874c1c78e50451ded33);
+        
+    
+        var popup_9123d5844f3aff10f67fa59d37f3e719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_459caed3e526b53c26290c0c53875844 = $(`<div id="html_459caed3e526b53c26290c0c53875844" style="width: 100.0%; height: 100.0%;">Soto Station</div>`)[0];
+                popup_9123d5844f3aff10f67fa59d37f3e719.setContent(html_459caed3e526b53c26290c0c53875844);
+            
+        
+
+        marker_70be583e857419df172b1f3d8c90363c.bindPopup(popup_9123d5844f3aff10f67fa59d37f3e719)
+        ;
+
+        
+    
+    
+            marker_70be583e857419df172b1f3d8c90363c.bindTooltip(
+                `<div>
+                     Gold Line: Soto Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f6d3d85fe5659c12e14b9c3b98dab77 = L.marker(
+                [34.047215, -118.219648],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_90dbcb9fdd919c2d2caecb5437828f8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_4f6d3d85fe5659c12e14b9c3b98dab77.setIcon(icon_90dbcb9fdd919c2d2caecb5437828f8e);
+        
+    
+        var popup_46da9fad04ecdf4dd2e41a1cea38ca57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39c0749f88454bee7f1fcab92ecb2df7 = $(`<div id="html_39c0749f88454bee7f1fcab92ecb2df7" style="width: 100.0%; height: 100.0%;">Mariachi Plaza / Boyle Heights Station</div>`)[0];
+                popup_46da9fad04ecdf4dd2e41a1cea38ca57.setContent(html_39c0749f88454bee7f1fcab92ecb2df7);
+            
+        
+
+        marker_4f6d3d85fe5659c12e14b9c3b98dab77.bindPopup(popup_46da9fad04ecdf4dd2e41a1cea38ca57)
+        ;
+
+        
+    
+    
+            marker_4f6d3d85fe5659c12e14b9c3b98dab77.bindTooltip(
+                `<div>
+                     Gold Line: Mariachi Plaza / Boyle Heights Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41f35233a172b96760725fbb0c852e62 = L.marker(
+                [34.047634, -118.22594],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_00242ce35972703175e0ecf1d55fd77a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_41f35233a172b96760725fbb0c852e62.setIcon(icon_00242ce35972703175e0ecf1d55fd77a);
+        
+    
+        var popup_b03a3abf6286afda87b711bb407e1d9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_843333787006d57f1cf3e21165bf09d2 = $(`<div id="html_843333787006d57f1cf3e21165bf09d2" style="width: 100.0%; height: 100.0%;">Pico / Aliso Station</div>`)[0];
+                popup_b03a3abf6286afda87b711bb407e1d9b.setContent(html_843333787006d57f1cf3e21165bf09d2);
+            
+        
+
+        marker_41f35233a172b96760725fbb0c852e62.bindPopup(popup_b03a3abf6286afda87b711bb407e1d9b)
+        ;
+
+        
+    
+    
+            marker_41f35233a172b96760725fbb0c852e62.bindTooltip(
+                `<div>
+                     Gold Line: Pico / Aliso Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be78aaf3fd38bea5a26744b6e44c51b9 = L.marker(
+                [34.0501, -118.237901],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_3281a5abba763496fe23d5c5d7cabb4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_be78aaf3fd38bea5a26744b6e44c51b9.setIcon(icon_3281a5abba763496fe23d5c5d7cabb4e);
+        
+    
+        var popup_cdfccedf003026c40cd4826574861c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a86cfd8959f0d9c2cc4401769918248 = $(`<div id="html_6a86cfd8959f0d9c2cc4401769918248" style="width: 100.0%; height: 100.0%;">Little Tokyo / Arts District Station</div>`)[0];
+                popup_cdfccedf003026c40cd4826574861c93.setContent(html_6a86cfd8959f0d9c2cc4401769918248);
+            
+        
+
+        marker_be78aaf3fd38bea5a26744b6e44c51b9.bindPopup(popup_cdfccedf003026c40cd4826574861c93)
+        ;
+
+        
+    
+    
+            marker_be78aaf3fd38bea5a26744b6e44c51b9.bindTooltip(
+                `<div>
+                     Gold Line: Little Tokyo / Arts District Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec88b97096e146fc5edef4b4216395c9 = L.marker(
+                [34.056061, -118.234759],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_7624a39e3077179e2fd42cee06819ad3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_ec88b97096e146fc5edef4b4216395c9.setIcon(icon_7624a39e3077179e2fd42cee06819ad3);
+        
+    
+        var popup_142b6c5bc28c9299bc2c271ce5af078d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d6b2e5c1c86697f716ac82420092ad8 = $(`<div id="html_4d6b2e5c1c86697f716ac82420092ad8" style="width: 100.0%; height: 100.0%;">Union Station - Metro Gold Line</div>`)[0];
+                popup_142b6c5bc28c9299bc2c271ce5af078d.setContent(html_4d6b2e5c1c86697f716ac82420092ad8);
+            
+        
+
+        marker_ec88b97096e146fc5edef4b4216395c9.bindPopup(popup_142b6c5bc28c9299bc2c271ce5af078d)
+        ;
+
+        
+    
+    
+            marker_ec88b97096e146fc5edef4b4216395c9.bindTooltip(
+                `<div>
+                     Gold Line: Union Station - Metro Gold Line
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b90d4bf22ad0416583935d426272e0f3 = L.marker(
+                [34.063861, -118.23584],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_85a5893a3a9991f225d2e4ccc28efc15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_b90d4bf22ad0416583935d426272e0f3.setIcon(icon_85a5893a3a9991f225d2e4ccc28efc15);
+        
+    
+        var popup_fdb0ead33bda9246a2fe935ff59dd960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65af4bffff887af37e8e6c88f34c9cc2 = $(`<div id="html_65af4bffff887af37e8e6c88f34c9cc2" style="width: 100.0%; height: 100.0%;">Chinatown Station</div>`)[0];
+                popup_fdb0ead33bda9246a2fe935ff59dd960.setContent(html_65af4bffff887af37e8e6c88f34c9cc2);
+            
+        
+
+        marker_b90d4bf22ad0416583935d426272e0f3.bindPopup(popup_fdb0ead33bda9246a2fe935ff59dd960)
+        ;
+
+        
+    
+    
+            marker_b90d4bf22ad0416583935d426272e0f3.bindTooltip(
+                `<div>
+                     Gold Line: Chinatown Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_821a3f7f8efbf32f8d6cf52a66ae0d95 = L.marker(
+                [34.080949, -118.220429],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_ae568056e40630889e4b31992af1c8a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_821a3f7f8efbf32f8d6cf52a66ae0d95.setIcon(icon_ae568056e40630889e4b31992af1c8a4);
+        
+    
+        var popup_da0742f28245a1ebebdb35e26a0dca3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ee3e194e50eccff999b6cf66a923556 = $(`<div id="html_1ee3e194e50eccff999b6cf66a923556" style="width: 100.0%; height: 100.0%;">Lincoln Heights / Cypress Park Station</div>`)[0];
+                popup_da0742f28245a1ebebdb35e26a0dca3e.setContent(html_1ee3e194e50eccff999b6cf66a923556);
+            
+        
+
+        marker_821a3f7f8efbf32f8d6cf52a66ae0d95.bindPopup(popup_da0742f28245a1ebebdb35e26a0dca3e)
+        ;
+
+        
+    
+    
+            marker_821a3f7f8efbf32f8d6cf52a66ae0d95.bindTooltip(
+                `<div>
+                     Gold Line: Lincoln Heights / Cypress Park Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f534f252c432416c7421531195d0f76b = L.marker(
+                [34.087227, -118.213213],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_35c55f40b382b944d402096daed5625a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_f534f252c432416c7421531195d0f76b.setIcon(icon_35c55f40b382b944d402096daed5625a);
+        
+    
+        var popup_2f02da289703acf8ce9578acc6922d8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b330eeab781932dd4e660a3afa149464 = $(`<div id="html_b330eeab781932dd4e660a3afa149464" style="width: 100.0%; height: 100.0%;">Heritage Square / Arroyo Station</div>`)[0];
+                popup_2f02da289703acf8ce9578acc6922d8c.setContent(html_b330eeab781932dd4e660a3afa149464);
+            
+        
+
+        marker_f534f252c432416c7421531195d0f76b.bindPopup(popup_2f02da289703acf8ce9578acc6922d8c)
+        ;
+
+        
+    
+    
+            marker_f534f252c432416c7421531195d0f76b.bindTooltip(
+                `<div>
+                     Gold Line: Heritage Square / Arroyo Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c483f83c23f8508508a5fb263a9f0c6 = L.marker(
+                [34.098243, -118.206712],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_219878672e48cd59080ebddbebcef869 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_2c483f83c23f8508508a5fb263a9f0c6.setIcon(icon_219878672e48cd59080ebddbebcef869);
+        
+    
+        var popup_163e74b6005a4cd9ea41832553042ab9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f93e7108838cc323e7851cfcd8282eeb = $(`<div id="html_f93e7108838cc323e7851cfcd8282eeb" style="width: 100.0%; height: 100.0%;">Southwest Museum Station</div>`)[0];
+                popup_163e74b6005a4cd9ea41832553042ab9.setContent(html_f93e7108838cc323e7851cfcd8282eeb);
+            
+        
+
+        marker_2c483f83c23f8508508a5fb263a9f0c6.bindPopup(popup_163e74b6005a4cd9ea41832553042ab9)
+        ;
+
+        
+    
+    
+            marker_2c483f83c23f8508508a5fb263a9f0c6.bindTooltip(
+                `<div>
+                     Gold Line: Southwest Museum Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e479290344fe3f1738aba6200e8118cf = L.marker(
+                [34.111179, -118.192606],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_447c3df1016fddd9947659202a773737 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_e479290344fe3f1738aba6200e8118cf.setIcon(icon_447c3df1016fddd9947659202a773737);
+        
+    
+        var popup_a03cfa9ac851847288c256bf0fc257f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea26edd1dac27a09befea7ee7ee8868a = $(`<div id="html_ea26edd1dac27a09befea7ee7ee8868a" style="width: 100.0%; height: 100.0%;">Highland Park Station</div>`)[0];
+                popup_a03cfa9ac851847288c256bf0fc257f9.setContent(html_ea26edd1dac27a09befea7ee7ee8868a);
+            
+        
+
+        marker_e479290344fe3f1738aba6200e8118cf.bindPopup(popup_a03cfa9ac851847288c256bf0fc257f9)
+        ;
+
+        
+    
+    
+            marker_e479290344fe3f1738aba6200e8118cf.bindTooltip(
+                `<div>
+                     Gold Line: Highland Park Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac6d96bb36961e18e61f77ff58360c6f = L.marker(
+                [34.115186, -118.157886],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_81f1825c2e47348242b10d24972da743 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_ac6d96bb36961e18e61f77ff58360c6f.setIcon(icon_81f1825c2e47348242b10d24972da743);
+        
+    
+        var popup_1c9e960e03bc97c73326849c9f84afd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f99683f62af003c23c89e6bfe4620d96 = $(`<div id="html_f99683f62af003c23c89e6bfe4620d96" style="width: 100.0%; height: 100.0%;">South Pasadena Station</div>`)[0];
+                popup_1c9e960e03bc97c73326849c9f84afd5.setContent(html_f99683f62af003c23c89e6bfe4620d96);
+            
+        
+
+        marker_ac6d96bb36961e18e61f77ff58360c6f.bindPopup(popup_1c9e960e03bc97c73326849c9f84afd5)
+        ;
+
+        
+    
+    
+            marker_ac6d96bb36961e18e61f77ff58360c6f.bindTooltip(
+                `<div>
+                     Gold Line: South Pasadena Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_102b5167ef834db53f1f1072e2025950 = L.marker(
+                [34.133521, -118.148126],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_40ac91045a13af6d846c77a87476387b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_102b5167ef834db53f1f1072e2025950.setIcon(icon_40ac91045a13af6d846c77a87476387b);
+        
+    
+        var popup_7aae9a942eac443de780e97e046da0ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67f09ce85f230b82f9a9ac8ee34d573e = $(`<div id="html_67f09ce85f230b82f9a9ac8ee34d573e" style="width: 100.0%; height: 100.0%;">Fillmore Station</div>`)[0];
+                popup_7aae9a942eac443de780e97e046da0ac.setContent(html_67f09ce85f230b82f9a9ac8ee34d573e);
+            
+        
+
+        marker_102b5167ef834db53f1f1072e2025950.bindPopup(popup_7aae9a942eac443de780e97e046da0ac)
+        ;
+
+        
+    
+    
+            marker_102b5167ef834db53f1f1072e2025950.bindTooltip(
+                `<div>
+                     Gold Line: Fillmore Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_899d5058739208bb81eb82e60d2d03f7 = L.marker(
+                [34.14191, -118.148214],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_133d765c9832cb9f21aa16f2b006c674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_899d5058739208bb81eb82e60d2d03f7.setIcon(icon_133d765c9832cb9f21aa16f2b006c674);
+        
+    
+        var popup_b59230a8d15b33b9ff9f10df17e69243 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecb7a8632fd5c347fcc8a2a37d8bd343 = $(`<div id="html_ecb7a8632fd5c347fcc8a2a37d8bd343" style="width: 100.0%; height: 100.0%;">Del Mar Station</div>`)[0];
+                popup_b59230a8d15b33b9ff9f10df17e69243.setContent(html_ecb7a8632fd5c347fcc8a2a37d8bd343);
+            
+        
+
+        marker_899d5058739208bb81eb82e60d2d03f7.bindPopup(popup_b59230a8d15b33b9ff9f10df17e69243)
+        ;
+
+        
+    
+    
+            marker_899d5058739208bb81eb82e60d2d03f7.bindTooltip(
+                `<div>
+                     Gold Line: Del Mar Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dc1a9ad3fece9634e98da979e39885e = L.marker(
+                [34.148356, -118.147512],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_01763a13c22addab9b24a0f4dccfd120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_0dc1a9ad3fece9634e98da979e39885e.setIcon(icon_01763a13c22addab9b24a0f4dccfd120);
+        
+    
+        var popup_97671bcf8d2ddb217e90e04ae080c0b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e7744f7f32f01e41c9d233f9ac21048 = $(`<div id="html_2e7744f7f32f01e41c9d233f9ac21048" style="width: 100.0%; height: 100.0%;">Memorial Park Station</div>`)[0];
+                popup_97671bcf8d2ddb217e90e04ae080c0b1.setContent(html_2e7744f7f32f01e41c9d233f9ac21048);
+            
+        
+
+        marker_0dc1a9ad3fece9634e98da979e39885e.bindPopup(popup_97671bcf8d2ddb217e90e04ae080c0b1)
+        ;
+
+        
+    
+    
+            marker_0dc1a9ad3fece9634e98da979e39885e.bindTooltip(
+                `<div>
+                     Gold Line: Memorial Park Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc25ca33cce6f28ffdd5ebfbe23ca8ed = L.marker(
+                [34.151806, -118.13139],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_03ccb4a2fb77f7a2ead6d2a0d8ac22b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_cc25ca33cce6f28ffdd5ebfbe23ca8ed.setIcon(icon_03ccb4a2fb77f7a2ead6d2a0d8ac22b7);
+        
+    
+        var popup_8d0f829539475ae4eeed5bc74243c21f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02517a69de5fa0b4a663187492c40397 = $(`<div id="html_02517a69de5fa0b4a663187492c40397" style="width: 100.0%; height: 100.0%;">Lake Station</div>`)[0];
+                popup_8d0f829539475ae4eeed5bc74243c21f.setContent(html_02517a69de5fa0b4a663187492c40397);
+            
+        
+
+        marker_cc25ca33cce6f28ffdd5ebfbe23ca8ed.bindPopup(popup_8d0f829539475ae4eeed5bc74243c21f)
+        ;
+
+        
+    
+    
+            marker_cc25ca33cce6f28ffdd5ebfbe23ca8ed.bindTooltip(
+                `<div>
+                     Gold Line: Lake Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ad06e951541c77ad9ccacff4e9892e7 = L.marker(
+                [34.152417, -118.114348],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_36bcb23d9ed73a2457c04deab527b676 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_0ad06e951541c77ad9ccacff4e9892e7.setIcon(icon_36bcb23d9ed73a2457c04deab527b676);
+        
+    
+        var popup_f90c1728f98ba973ce871de6b3a88c0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fff6e204dfa6d77aee23f8bb69c3675 = $(`<div id="html_1fff6e204dfa6d77aee23f8bb69c3675" style="width: 100.0%; height: 100.0%;">Allen Station</div>`)[0];
+                popup_f90c1728f98ba973ce871de6b3a88c0b.setContent(html_1fff6e204dfa6d77aee23f8bb69c3675);
+            
+        
+
+        marker_0ad06e951541c77ad9ccacff4e9892e7.bindPopup(popup_f90c1728f98ba973ce871de6b3a88c0b)
+        ;
+
+        
+    
+    
+            marker_0ad06e951541c77ad9ccacff4e9892e7.bindTooltip(
+                `<div>
+                     Gold Line: Allen Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d11eee1965ab4088736797f7dfcbc15 = L.marker(
+                [34.147752, -118.081212],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_1b3b3985d1d8a6a76defbfaef334393c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_0d11eee1965ab4088736797f7dfcbc15.setIcon(icon_1b3b3985d1d8a6a76defbfaef334393c);
+        
+    
+        var popup_f0d33488aa75cf41bb4e5f78a919b2c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83640dea9ac68a304892c358fa547427 = $(`<div id="html_83640dea9ac68a304892c358fa547427" style="width: 100.0%; height: 100.0%;">Sierra Madre Villa Station</div>`)[0];
+                popup_f0d33488aa75cf41bb4e5f78a919b2c5.setContent(html_83640dea9ac68a304892c358fa547427);
+            
+        
+
+        marker_0d11eee1965ab4088736797f7dfcbc15.bindPopup(popup_f0d33488aa75cf41bb4e5f78a919b2c5)
+        ;
+
+        
+    
+    
+            marker_0d11eee1965ab4088736797f7dfcbc15.bindTooltip(
+                `<div>
+                     Gold Line: Sierra Madre Villa Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e80cdfd9fa027c7fafeb3bdb4d5e4e68 = L.marker(
+                [34.029323, -118.404255],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_a589421132fddceb076d36cababe1622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e80cdfd9fa027c7fafeb3bdb4d5e4e68.setIcon(icon_a589421132fddceb076d36cababe1622);
+        
+    
+        var popup_6f7b0f15b77d8bbd9c9ca9e740cf4aa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd9c9b74cee6f4c4da8597014517d5f6 = $(`<div id="html_bd9c9b74cee6f4c4da8597014517d5f6" style="width: 100.0%; height: 100.0%;">Palms Station</div>`)[0];
+                popup_6f7b0f15b77d8bbd9c9ca9e740cf4aa1.setContent(html_bd9c9b74cee6f4c4da8597014517d5f6);
+            
+        
+
+        marker_e80cdfd9fa027c7fafeb3bdb4d5e4e68.bindPopup(popup_6f7b0f15b77d8bbd9c9ca9e740cf4aa1)
+        ;
+
+        
+    
+    
+            marker_e80cdfd9fa027c7fafeb3bdb4d5e4e68.bindTooltip(
+                `<div>
+                     EXPO Line: Palms Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b6fb7d3a89029608a4296ae15b845e4 = L.marker(
+                [34.036816, -118.424576],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_e8a873c0a76fc4db8d14747e8764afcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1b6fb7d3a89029608a4296ae15b845e4.setIcon(icon_e8a873c0a76fc4db8d14747e8764afcd);
+        
+    
+        var popup_1a9b9d917265bcf87c3ef975474164be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7eb035c22055df0e34bb01da53f7f82 = $(`<div id="html_f7eb035c22055df0e34bb01da53f7f82" style="width: 100.0%; height: 100.0%;">Westwood / Rancho Park Station</div>`)[0];
+                popup_1a9b9d917265bcf87c3ef975474164be.setContent(html_f7eb035c22055df0e34bb01da53f7f82);
+            
+        
+
+        marker_1b6fb7d3a89029608a4296ae15b845e4.bindPopup(popup_1a9b9d917265bcf87c3ef975474164be)
+        ;
+
+        
+    
+    
+            marker_1b6fb7d3a89029608a4296ae15b845e4.bindTooltip(
+                `<div>
+                     EXPO Line: Westwood / Rancho Park Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62afd16ede5bc23b82015cdc2a97c031 = L.marker(
+                [34.035408, -118.434234],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_71897f38d761c1273ca11776d9343569 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_62afd16ede5bc23b82015cdc2a97c031.setIcon(icon_71897f38d761c1273ca11776d9343569);
+        
+    
+        var popup_51049c6a38f491f48bec3032daa444ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1852f02a47adad9aab9efa1bc1bd098b = $(`<div id="html_1852f02a47adad9aab9efa1bc1bd098b" style="width: 100.0%; height: 100.0%;">Expo / Sepulveda Station</div>`)[0];
+                popup_51049c6a38f491f48bec3032daa444ed.setContent(html_1852f02a47adad9aab9efa1bc1bd098b);
+            
+        
+
+        marker_62afd16ede5bc23b82015cdc2a97c031.bindPopup(popup_51049c6a38f491f48bec3032daa444ed)
+        ;
+
+        
+    
+    
+            marker_62afd16ede5bc23b82015cdc2a97c031.bindTooltip(
+                `<div>
+                     EXPO Line: Expo / Sepulveda Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa0e26c46499703236527d23beb81b55 = L.marker(
+                [34.031705, -118.452896],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_f633650759db1ac93c487c3892a52d6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_aa0e26c46499703236527d23beb81b55.setIcon(icon_f633650759db1ac93c487c3892a52d6f);
+        
+    
+        var popup_e751f47dd6a80da807ce64d614fa7a6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6478d27af51126e3cfe0d81054b1618 = $(`<div id="html_c6478d27af51126e3cfe0d81054b1618" style="width: 100.0%; height: 100.0%;">Expo / Bundy Station</div>`)[0];
+                popup_e751f47dd6a80da807ce64d614fa7a6b.setContent(html_c6478d27af51126e3cfe0d81054b1618);
+            
+        
+
+        marker_aa0e26c46499703236527d23beb81b55.bindPopup(popup_e751f47dd6a80da807ce64d614fa7a6b)
+        ;
+
+        
+    
+    
+            marker_aa0e26c46499703236527d23beb81b55.bindTooltip(
+                `<div>
+                     EXPO Line: Expo / Bundy Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_898ce39d8f545252a8b12f062b7be283 = L.marker(
+                [34.027995, -118.46912],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_ff88e4f58d9f7bbc01e509f3c6b2f5ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_898ce39d8f545252a8b12f062b7be283.setIcon(icon_ff88e4f58d9f7bbc01e509f3c6b2f5ca);
+        
+    
+        var popup_99691bb8b0bc01aaff20b730ef0eea7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7bde0c63134374c57ebb9e6bf417c58 = $(`<div id="html_d7bde0c63134374c57ebb9e6bf417c58" style="width: 100.0%; height: 100.0%;">26th St / Bergamot Station</div>`)[0];
+                popup_99691bb8b0bc01aaff20b730ef0eea7f.setContent(html_d7bde0c63134374c57ebb9e6bf417c58);
+            
+        
+
+        marker_898ce39d8f545252a8b12f062b7be283.bindPopup(popup_99691bb8b0bc01aaff20b730ef0eea7f)
+        ;
+
+        
+    
+    
+            marker_898ce39d8f545252a8b12f062b7be283.bindTooltip(
+                `<div>
+                     EXPO Line: 26th St / Bergamot Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e76e08a71d8a8c47fdab2e458f99f3e = L.marker(
+                [34.023155, -118.480372],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_7e3df706c1a7316ffabb7fff068f9143 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2e76e08a71d8a8c47fdab2e458f99f3e.setIcon(icon_7e3df706c1a7316ffabb7fff068f9143);
+        
+    
+        var popup_d96440bf56e81f39b985f4490e19929c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c7f9e993f84fe8746b297620285ebe8 = $(`<div id="html_0c7f9e993f84fe8746b297620285ebe8" style="width: 100.0%; height: 100.0%;">17th St / SMC Station</div>`)[0];
+                popup_d96440bf56e81f39b985f4490e19929c.setContent(html_0c7f9e993f84fe8746b297620285ebe8);
+            
+        
+
+        marker_2e76e08a71d8a8c47fdab2e458f99f3e.bindPopup(popup_d96440bf56e81f39b985f4490e19929c)
+        ;
+
+        
+    
+    
+            marker_2e76e08a71d8a8c47fdab2e458f99f3e.bindTooltip(
+                `<div>
+                     EXPO Line: 17th St / SMC Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c38a3c33633fda00ad4a1bc639630dcd = L.marker(
+                [34.01401, -118.491384],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_03f4f7bfe0ce571bf16b00241cae4a02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c38a3c33633fda00ad4a1bc639630dcd.setIcon(icon_03f4f7bfe0ce571bf16b00241cae4a02);
+        
+    
+        var popup_03d9b4fc7cacb1e7e2a6ac423a2cf967 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_757fe167dd010f028cb8ee1d5b572178 = $(`<div id="html_757fe167dd010f028cb8ee1d5b572178" style="width: 100.0%; height: 100.0%;">Downtown Santa Monica Station</div>`)[0];
+                popup_03d9b4fc7cacb1e7e2a6ac423a2cf967.setContent(html_757fe167dd010f028cb8ee1d5b572178);
+            
+        
+
+        marker_c38a3c33633fda00ad4a1bc639630dcd.bindPopup(popup_03d9b4fc7cacb1e7e2a6ac423a2cf967)
+        ;
+
+        
+    
+    
+            marker_c38a3c33633fda00ad4a1bc639630dcd.bindTooltip(
+                `<div>
+                     EXPO Line: Downtown Santa Monica Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_447e7494bdfe734d32536c7bc2c77861 = L.marker(
+                [34.14286, -118.029199],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_2692e3202ea06d3f3182385a1f7476a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_447e7494bdfe734d32536c7bc2c77861.setIcon(icon_2692e3202ea06d3f3182385a1f7476a2);
+        
+    
+        var popup_5191516275cd41e97cb67668e8f93c77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cac37249574607e6a792dc3b42cf95a = $(`<div id="html_6cac37249574607e6a792dc3b42cf95a" style="width: 100.0%; height: 100.0%;">Arcadia Station</div>`)[0];
+                popup_5191516275cd41e97cb67668e8f93c77.setContent(html_6cac37249574607e6a792dc3b42cf95a);
+            
+        
+
+        marker_447e7494bdfe734d32536c7bc2c77861.bindPopup(popup_5191516275cd41e97cb67668e8f93c77)
+        ;
+
+        
+    
+    
+            marker_447e7494bdfe734d32536c7bc2c77861.bindTooltip(
+                `<div>
+                     Gold Line: Arcadia Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_463639c778697e89d4832dc2555dd015 = L.marker(
+                [34.133155, -118.003473],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_f1072aa1c2e90baf3fe23903a38b92cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_463639c778697e89d4832dc2555dd015.setIcon(icon_f1072aa1c2e90baf3fe23903a38b92cd);
+        
+    
+        var popup_bd8986483d7243f03fa91a4b87952b48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1679b3569f1030c749a9e3655050510 = $(`<div id="html_a1679b3569f1030c749a9e3655050510" style="width: 100.0%; height: 100.0%;">Monrovia Station</div>`)[0];
+                popup_bd8986483d7243f03fa91a4b87952b48.setContent(html_a1679b3569f1030c749a9e3655050510);
+            
+        
+
+        marker_463639c778697e89d4832dc2555dd015.bindPopup(popup_bd8986483d7243f03fa91a4b87952b48)
+        ;
+
+        
+    
+    
+            marker_463639c778697e89d4832dc2555dd015.bindTooltip(
+                `<div>
+                     Gold Line: Monrovia Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_697f7acccb51efa90f6be750eb3eb27c = L.marker(
+                [34.132518, -117.96768],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_fa5f9859e9489bed9304af965ebcbe33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_697f7acccb51efa90f6be750eb3eb27c.setIcon(icon_fa5f9859e9489bed9304af965ebcbe33);
+        
+    
+        var popup_4d22cc70423c2401afb0270ac9cc95d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_630fd78ab528acae9a33faae014281a0 = $(`<div id="html_630fd78ab528acae9a33faae014281a0" style="width: 100.0%; height: 100.0%;">Duarte / City of Hope Station</div>`)[0];
+                popup_4d22cc70423c2401afb0270ac9cc95d3.setContent(html_630fd78ab528acae9a33faae014281a0);
+            
+        
+
+        marker_697f7acccb51efa90f6be750eb3eb27c.bindPopup(popup_4d22cc70423c2401afb0270ac9cc95d3)
+        ;
+
+        
+    
+    
+            marker_697f7acccb51efa90f6be750eb3eb27c.bindTooltip(
+                `<div>
+                     Gold Line: Duarte / City of Hope Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa2c62fa4ada2d7723d3ecfc874c5aa1 = L.marker(
+                [34.129048, -117.932506],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_c8ac9cc53302a6ac23dccf6791dd40fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_aa2c62fa4ada2d7723d3ecfc874c5aa1.setIcon(icon_c8ac9cc53302a6ac23dccf6791dd40fa);
+        
+    
+        var popup_5d16a2f21403c324b2c652a9a998a27c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16f2b65b297c9222831d830bf9a58e60 = $(`<div id="html_16f2b65b297c9222831d830bf9a58e60" style="width: 100.0%; height: 100.0%;">Irwindale Station</div>`)[0];
+                popup_5d16a2f21403c324b2c652a9a998a27c.setContent(html_16f2b65b297c9222831d830bf9a58e60);
+            
+        
+
+        marker_aa2c62fa4ada2d7723d3ecfc874c5aa1.bindPopup(popup_5d16a2f21403c324b2c652a9a998a27c)
+        ;
+
+        
+    
+    
+            marker_aa2c62fa4ada2d7723d3ecfc874c5aa1.bindTooltip(
+                `<div>
+                     Gold Line: Irwindale Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b628be86061dc6ee1a9f3afa75e6e92f = L.marker(
+                [34.135863, -117.906631],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_3f9db27855c1b2f0c2ec451cee8fc856 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_b628be86061dc6ee1a9f3afa75e6e92f.setIcon(icon_3f9db27855c1b2f0c2ec451cee8fc856);
+        
+    
+        var popup_b7f30d8afaecef4f398c7ee76b350cac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_686ee71fd4f2ed5bb359b07d0decfff3 = $(`<div id="html_686ee71fd4f2ed5bb359b07d0decfff3" style="width: 100.0%; height: 100.0%;">Azusa Downtown Station</div>`)[0];
+                popup_b7f30d8afaecef4f398c7ee76b350cac.setContent(html_686ee71fd4f2ed5bb359b07d0decfff3);
+            
+        
+
+        marker_b628be86061dc6ee1a9f3afa75e6e92f.bindPopup(popup_b7f30d8afaecef4f398c7ee76b350cac)
+        ;
+
+        
+    
+    
+            marker_b628be86061dc6ee1a9f3afa75e6e92f.bindTooltip(
+                `<div>
+                     Gold Line: Azusa Downtown Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a2e170c512d59cafad6dc5ea43d5e2a = L.marker(
+                [34.136814, -117.891636],
+                {}
+            ).addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+    
+            var icon_a279a34501932b8d34caae6a124792bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_3a2e170c512d59cafad6dc5ea43d5e2a.setIcon(icon_a279a34501932b8d34caae6a124792bd);
+        
+    
+        var popup_4a84c15cd55623151df97f7ca5cc944a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_306e429afadb4f013c5a8bb96a591d33 = $(`<div id="html_306e429afadb4f013c5a8bb96a591d33" style="width: 100.0%; height: 100.0%;">APU / Citrus College Station</div>`)[0];
+                popup_4a84c15cd55623151df97f7ca5cc944a.setContent(html_306e429afadb4f013c5a8bb96a591d33);
+            
+        
+
+        marker_3a2e170c512d59cafad6dc5ea43d5e2a.bindPopup(popup_4a84c15cd55623151df97f7ca5cc944a)
+        ;
+
+        
+    
+    
+            marker_3a2e170c512d59cafad6dc5ea43d5e2a.bindTooltip(
+                `<div>
+                     Gold Line: APU / Citrus College Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_d9c31d69f4a8602cab84d8b7e776ec37.addTo(map_260faf36e619bbef0d39bd834ea7251f);
+        
+</script>
+</html>
